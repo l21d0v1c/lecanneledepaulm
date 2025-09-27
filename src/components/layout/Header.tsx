@@ -6,9 +6,9 @@ import { ShoppingCart } from "lucide-react"; // Import de l'icône ShoppingCart
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-24 md:h-32 items-center py-2 md:py-4 relative px-4"> {/* Hauteur et padding ajustés, ajout de px-4 */}
+      <div className="container flex h-32 items-center py-4 relative px-4"> {/* Hauteur ajustée à h-32 pour toutes les tailles d'écran */}
         {/* Bouton "La Maison" à gauche */}
-        <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"> {/* left-4 pour le padding */}
+        <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
           La Maison
         </Button>
 
@@ -17,8 +17,8 @@ const Header: React.FC = () => {
           <Link to="/">
             <Button
               variant="default"
-              className="text-sm md:text-base font-bold text-white bg-black px-4 py-6 md:px-8 md:py-12 rounded-full hover:bg-gray-800 transition-colors flex flex-col justify-center items-center leading-tight border-4 border-[#f8ac54]"
-            > {/* Taille du texte et padding ajustés */}
+              className="text-base font-bold text-white bg-black px-8 py-12 rounded-full hover:bg-gray-800 transition-colors flex flex-col justify-center items-center leading-tight border-4 border-[#f8ac54]"
+            > {/* Taille du texte et padding fixes pour conserver la grande taille */}
               <span>Le Cannelé de</span>
               <span>Paul M</span>
             </Button>
@@ -26,8 +26,8 @@ const Header: React.FC = () => {
         </div>
 
         {/* Bouton Caddie à droite */}
-        <Button variant="ghost" size="icon" className="absolute right-4 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"> {/* right-4 pour le padding */}
-          <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" /> {/* Taille de l'icône ajustée */}
+        <Button variant="ghost" size="icon" className="absolute right-4 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+          <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
         </Button>
       </div>
     </header>
