@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between py-4">
         <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-          Cannelé Délices
+          Le Cannelé de Paul M
         </Link>
         <nav>
           <Button variant="ghost" size="icon" aria-label="Panier">
