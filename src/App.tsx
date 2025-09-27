@@ -12,10 +12,9 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    {/* Envelopper tous les enfants de QueryClientProvider dans un React.Fragment */}
     <React.Fragment>
       <TooltipProvider>
-        {/* Le div reste ici pour que TooltipProvider ait un seul enfant */}
+        {/* Réintroduction du div wrapper pour s'assurer que TooltipProvider reçoit un seul élément HTML comme enfant */}
         <div>
           <BrowserRouter>
             <Layout>
