@@ -38,7 +38,7 @@ const ProductList: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
       {products.map((product) => (
-        <Card key={product.id} className="flex flex-col">
+        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border-none">
           <CardHeader>
             <img src={product.imageUrl} alt={product.name} className="w-full h-48 object-cover rounded-t-lg mb-4" />
             <CardTitle className="text-xl font-semibold">{product.name}</CardTitle>
