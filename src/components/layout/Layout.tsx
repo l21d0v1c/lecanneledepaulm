@@ -12,7 +12,7 @@ const carouselImages = [
   "/canneles-3.jpg",
   "/canneles-4.jpg",
   "/canneles-5.jpg",
-  "/canneles-6.jpg",
+  // "/canneles-6.jpg", // Cette image n'existe pas dans le dossier public et a été retirée.
   "/canneles-7.png",
   "/canneles-8.jpg",
   "/canneles-9.jpg",
@@ -25,7 +25,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header />
       <main className="flex-grow relative min-h-[calc(100vh-4rem)]">
         <ImageCarousel images={carouselImages} />
-        {/* La superposition sombre a été supprimée pour une clarté maximale du carrousel */}
         <div className="relative z-10 h-full w-full flex flex-col items-center justify-center">
           {children}
         </div>
