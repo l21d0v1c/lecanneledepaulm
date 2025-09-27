@@ -11,12 +11,13 @@ import React from "react"; // Import de React pour utiliser React.Fragment
 const queryClient = new QueryClient();
 
 const App = () => (
-  // L'App retourne un seul QueryClientProvider
-  <QueryClientProvider client={queryClient}>
-    {/* QueryClientProvider a un seul enfant : TooltipProvider */}
-    <TooltipProvider>
-      {/* TooltipProvider a un seul enfant : un div qui contient tout le reste */}
-      <div>
+  // L'App retourne un seul React.Fragment
+  <React.Fragment>
+    {/* QueryClientProvider enveloppe le TooltipProvider */}
+    <QueryClientProvider client={queryClient}>
+      {/* TooltipProvider enveloppe le BrowserRouter */}
+      <TooltipProvider>
+        {/* BrowserRouter enveloppe le Layout */}
         <BrowserRouter>
           <Layout>
             <Routes>
@@ -26,13 +27,13 @@ const App = () => (
             </Routes>
           </Layout>
         </BrowserRouter>
-        {/* Toaster et Sonner sont maintenant à l'intérieur de ce même div,
-            ce qui garantit que TooltipProvider a un seul enfant direct. */}
-        <Toaster />
-        <Sonner />
-      </div>
-    </TooltipProvider>
-  </QueryClientProvider>
+      </TooltipProvider>
+    </QueryClientProvider>
+    {/* Toaster et Sonner sont des frères et sœurs directs du QueryClientProvider,
+        au niveau le plus élevé de l'application, à l'intérieur du React.Fragment. */}
+    <Toaster />
+    <Sonner />
+  </React.Fragment>
 );
 
 export default App;
