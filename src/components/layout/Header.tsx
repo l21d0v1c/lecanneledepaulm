@@ -5,8 +5,8 @@ import { ShoppingCart } from "lucide-react";
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent"> {/* Bordure noire ajoutée */}
-      <div className="container flex h-16 items-center justify-between py-4">
+    <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
+      <div className="container flex h-32 items-center justify-between py-4"> {/* Hauteur doublée à h-32 */}
         <Link to="/" className="text-2xl font-bold text-white hover:text-gray-200 transition-colors">
           Le Cannelé de Paul M
         </Link>
