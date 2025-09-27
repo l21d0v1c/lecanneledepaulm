@@ -1,9 +1,26 @@
 import ProductList from "@/components/ProductList";
+import ImageCarousel from "@/components/ImageCarousel";
+
+const placeholderImages = [
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+];
 
 const Index = () => {
   return (
-    <div className="flex flex-col items-center bg-gray-50 dark:bg-gray-900 p-4 rounded-lg shadow-lg">
-      <div className="container mx-auto px-4">
+    <div className="relative h-full w-full flex flex-col items-center justify-center">
+      <ImageCarousel images={placeholderImages} />
+
+      {/* Content wrapper now includes container styling */}
+      <div className="relative z-10 w-full max-w-4xl p-4 rounded-lg shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm container mx-auto py-8">
         <div className="text-center mb-8 mt-4">
           <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
             Découvrez nos Cannelés Artisanaux
