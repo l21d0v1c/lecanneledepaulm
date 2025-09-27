@@ -6,7 +6,7 @@ import { ShoppingCart } from "lucide-react";
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-56 items-center justify-between py-4">
+      <div className="container flex h-56 items-center justify-between py-2"> {/* Changé de py-4 à py-2 */}
         <Button asChild className="w-48 h-48 flex items-center justify-center text-center text-base font-bold text-white bg-black rounded-full hover:bg-gray-800 transition-colors">
           <Link to="/">
             Le Cannelé de Paul M
