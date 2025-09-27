@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-44 items-center justify-center py-4"> {/* Changé justify-between en justify-center */}
+      <div className="container flex h-44 items-center justify-center py-4">
         <Link to="/">
           <Button
             variant="default"
-            className="text-base font-bold text-white bg-black px-8 py-12 rounded-full hover:bg-gray-800 transition-colors flex flex-col justify-center items-center leading-tight"
+            className="text-base font-bold text-white bg-black px-8 py-12 rounded-full hover:bg-gray-800 transition-colors flex flex-col justify-center items-center leading-tight border-2 border-[#f8ac54]" // Ajout de la bordure
           >
             <span>Le Cannelé de</span>
             <span>Paul M</span>
