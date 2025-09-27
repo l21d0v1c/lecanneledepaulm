@@ -12,10 +12,10 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    {/* TooltipProvider doit avoir un seul enfant. Nous allons envelopper tout le reste dans un React.Fragment. */}
-    <TooltipProvider>
-      <React.Fragment>
-        {/* Le div wrapper pour BrowserRouter reste pour s'assurer que BrowserRouter est bien un enfant unique du div */}
+    {/* QueryClientProvider a un seul enfant : un React.Fragment */}
+    <React.Fragment>
+      {/* TooltipProvider enveloppe maintenant uniquement le contenu principal de l'application */}
+      <TooltipProvider>
         <div>
           <BrowserRouter>
             <Layout>
@@ -27,11 +27,11 @@ const App = () => (
             </Layout>
           </BrowserRouter>
         </div>
-        {/* Toaster et Sonner sont maintenant des frères et sœurs du div, tous à l'intérieur du React.Fragment */}
-        <Toaster />
-        <Sonner />
-      </React.Fragment>
-    </TooltipProvider>
+      </TooltipProvider>
+      {/* Toaster et Sonner sont des frères et sœurs du TooltipProvider, mais toujours dans le même React.Fragment */}
+      <Toaster />
+      <Sonner />
+    </React.Fragment>
   </QueryClientProvider>
 );
 
