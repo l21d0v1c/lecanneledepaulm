@@ -6,28 +6,31 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
+import React from "react"; // Import de React pour utiliser React.Fragment
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      {/* Envelopper BrowserRouter dans un div pour s'assurer que TooltipProvider reçoit un seul élément enfant */}
-      <div>
-        <BrowserRouter>
-          <Layout>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Layout>
-        </BrowserRouter>
-      </div>
-    </TooltipProvider>
-    {/* Toaster et Sonner sont déplacés ici pour être des frères et sœurs du TooltipProvider */}
-    <Toaster />
-    <Sonner />
+    {/* Envelopper tous les enfants de QueryClientProvider dans un React.Fragment */}
+    <React.Fragment>
+      <TooltipProvider>
+        {/* Le div reste ici pour que TooltipProvider ait un seul enfant */}
+        <div>
+          <BrowserRouter>
+            <Layout>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Layout>
+          </BrowserRouter>
+        </div>
+      </TooltipProvider>
+      <Toaster />
+      <Sonner />
+    </React.Fragment>
   </QueryClientProvider>
 );
 
