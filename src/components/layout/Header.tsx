@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <Link to="/">
           <Button
             variant="default"
-            className="text-base font-bold text-white bg-black px-8 py-10 rounded-full hover:bg-gray-800 transition-colors flex flex-col justify-center items-center leading-tight" // Ajout de flex-col et leading-tight
+            className="text-base font-bold text-white bg-black px-8 py-12 rounded-full hover:bg-gray-800 transition-colors flex flex-col justify-center items-center leading-tight" // Hauteur augmentée (py-12)
           >
             <span>Le Cannelé de</span>
             <span>Paul M</span>
