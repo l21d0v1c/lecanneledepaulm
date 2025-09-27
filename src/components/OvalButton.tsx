@@ -1,15 +1,9 @@
 import React from "react";
 
-interface OvalButtonProps {
-  children: React.ReactNode;
-}
-
-const OvalButton: React.FC<OvalButtonProps> = ({ children }) => {
+export default function OvalButton({ children }: { children: React.ReactNode }) {
   return (
-    <button className="bg-blue-600 text-white font-medium px-6 py-10 rounded-full"> {/* Changement de py-8 à py-10 */}
+    <button className="bg-blue-600 text-white font-medium px-6 py-3 rounded-full">
       {children}
     </button>
   );
-};
-
-export default OvalButton;
+}
