@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"; // Assurez-vous que Button est importé
 import { ShoppingCart } from "lucide-react";
-import OvalButton from "../OvalButton";
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent h-56 md:h-72">
-      <div className="flex w-full items-center justify-between px-4">
-        <div className="flex-1" />
-        <OvalButton>Le Cannelé de Paul M</OvalButton>
-        <div className="flex-1 flex justify-end">
-          {/* bouton panier */}
-        </div>
+    <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
+      <div className="container flex h-44 items-center justify-between py-4">
+        <Button asChild className="text-base font-bold text-white bg-black px-6 py-12 rounded-full hover:bg-gray-800 transition-colors">
+          <Link to="/">
+            Le Cannelé de Paul M
+          </Link>
+        </Button>
+        <nav>
+          <Button variant="ghost" size="icon" aria-label="Panier" className="text-white hover:bg-white/20">
+            <ShoppingCart className="h-6 w-6" />
+          </Button>
+        </nav>
       </div>
     </header>
   );
