@@ -12,9 +12,8 @@ const carouselImages = [
   "/canneles-3.jpg",
   "/canneles-4.jpg",
   "/canneles-5.jpg",
-  "/canneles-6.jpg",
-  "/canneles-7.jpg",
-  "/canneles-8.jpg",
+  "/canneles-6.jpg", // Anciennement canneles-7.jpg
+  "/canneles-7.jpg", // Anciennement canneles-8.jpg
 ];
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
