@@ -7,12 +7,12 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
       <div className="container flex h-56 items-center justify-between py-2">
-        {/* Bouton avec une forme ovale en utilisant rounded-full */}
+        {/* Bouton avec une forme ovale plus prononcée */}
         <Button 
-          className="h-[110px] w-[200px] rounded-full bg-black text-white text-lg font-bold hover:bg-gray-800 transition-colors"
-          aria-label="Bouton Ovale"
+          className="h-[150px] w-[200px] rounded-full bg-black text-white text-lg font-bold hover:bg-gray-800 transition-colors"
+          aria-label="Le Cannelé de Paul M"
         >
-          Bouton Ovale
+          Le Cannelé de Paul M
         </Button>
         <nav>
           <Button variant="ghost" size="icon" aria-label="Panier" className="text-white hover:bg-white/20">
