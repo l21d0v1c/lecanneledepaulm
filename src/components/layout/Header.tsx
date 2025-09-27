@@ -6,8 +6,8 @@ import OvalButton from "../OvalButton";
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent h-56 md:h-72"> {/* Hauteur encore plus grande: h-56 sur mobile, md:h-72 sur desktop */}
-      <div className="flex w-full items-center justify-between px-4 h-full">
+    <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent h-56 md:h-72">
+      <div className="flex w-full items-center justify-between px-4"> {/* h-full a été retiré */}
         <div className="flex-1"></div>
         <OvalButton>Le Cannelé de Paul M</OvalButton>
         <div className="flex-1 flex justify-end">
