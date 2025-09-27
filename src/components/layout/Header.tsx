@@ -2,13 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
-import OvalButton from "@/components/OvalButton"; // Import du nouveau composant
+import OvalButton from "@/components/OvalButton";
 
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-56 items-center justify-between py-2">
-        {/* Utilisation du nouveau composant OvalButton */}
+      <div className="flex h-56 w-full items-center justify-between px-4"> {/* 'container' et 'py-2' supprimés, 'w-full' et 'px-4' ajoutés */}
         <OvalButton aria-label="Le Cannelé de Paul M">
           Le Cannelé de Paul M
         </OvalButton>
