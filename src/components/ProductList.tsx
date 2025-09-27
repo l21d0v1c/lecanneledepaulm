@@ -40,7 +40,7 @@ const ProductList: React.FC = () => {
       {products.map((product) => (
         <Card key={product.id} className="flex flex-col bg-transparent shadow-none border-none">
           <CardHeader>
-            <img src={product.imageUrl} alt={product.name} className="w-full h-48 object-cover rounded-t-lg mb-4" />
+            {/* L'image du produit a été supprimée ici */}
             <CardTitle className="text-xl font-semibold">{product.name}</CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col justify-between">
