@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
       <div className="container flex h-32 items-center py-4 relative px-4"> {/* Hauteur ajustée à h-32 pour toutes les tailles d'écran */}
         {/* Bouton "La Maison" à gauche */}
-        <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+        <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-white hover:bg-gray-100 dark:hover:bg-gray-700">
           La Maison
         </Button>
 
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Bouton Caddie à droite */}
-        <Button variant="ghost" size="icon" className="absolute right-4 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+        <Button variant="ghost" size="icon" className="absolute right-4 text-white hover:bg-gray-100 dark:hover:bg-gray-700">
           <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
         </Button>
       </div>
