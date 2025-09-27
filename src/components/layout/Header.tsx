@@ -7,9 +7,9 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
       <div className="container flex h-56 items-center justify-between py-2">
-        {/* Bouton avec une forme ovale plus prononcée */}
+        {/* Bouton avec une forme ovale plus allongée */}
         <Button 
-          className="h-[150px] w-[200px] rounded-full bg-black text-white text-lg font-bold hover:bg-gray-800 transition-colors"
+          className="h-[120px] w-[280px] rounded-full bg-black text-white text-lg font-bold hover:bg-gray-800 transition-colors"
           aria-label="Le Cannelé de Paul M"
         >
           Le Cannelé de Paul M
