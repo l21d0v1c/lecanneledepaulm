@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-12 items-center justify-center py-4"> {/* Hauteur réduite à h-12 */}
+      <div className="container flex h-16 items-center justify-center py-4"> {/* Hauteur augmentée à h-16 */}
         <Link to="/">
           <Button
             variant="default"
