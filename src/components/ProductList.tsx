@@ -38,9 +38,8 @@ const ProductList: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
       {products.map((product) => (
-        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border-none">
+        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-black">
           <CardHeader>
-            {/* L'image du produit a été supprimée ici */}
             <CardTitle className="text-xl font-semibold">{product.name}</CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col justify-between">
