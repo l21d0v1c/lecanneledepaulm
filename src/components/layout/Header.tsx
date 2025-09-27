@@ -7,9 +7,9 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
       <div className="container flex h-56 items-center justify-between py-2">
-        {/* Nouveau bouton avec les styles spécifiés */}
+        {/* Nouveau bouton avec la largeur ajustée */}
         <Button 
-          className="h-[110px] w-[250px] rounded-full bg-black text-white text-lg font-bold hover:bg-gray-800 transition-colors"
+          className="h-[110px] w-[200px] rounded-full bg-black text-white text-lg font-bold hover:bg-gray-800 transition-colors"
           aria-label="Nouveau Bouton"
         >
           Nouveau Bouton
