@@ -1,23 +1,14 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 
-interface OvalButtonProps extends React.ComponentPropsWithoutRef<typeof Button> {
+interface OvalButtonProps {
   children: React.ReactNode;
-  className?: string;
 }
 
-const OvalButton: React.FC<OvalButtonProps> = ({ children, className, ...props }) => {
+const OvalButton: React.FC<OvalButtonProps> = ({ children }) => {
   return (
-    <Button
-      className={cn(
-        "rounded-full px-6 py-3 bg-black text-white text-lg font-semibold hover:bg-gray-800 transition-colors flex items-center justify-center",
-        className
-      )}
-      {...props}
-    >
+    <button className="bg-blue-600 text-white font-medium px-6 py-2 rounded-full">
       {children}
-    </Button>
+    </button>
   );
 };
 
