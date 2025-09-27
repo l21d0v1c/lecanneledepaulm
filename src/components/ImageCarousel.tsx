@@ -20,8 +20,6 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
                 alt={`Cannelé background ${index + 1}`}
                 className="absolute inset-0 h-full w-full object-cover"
               />
-              {/* Overlay for text readability */}
-              <div className="absolute inset-0 bg-black opacity-30"></div>
             </div>
           ))}
         </div>
