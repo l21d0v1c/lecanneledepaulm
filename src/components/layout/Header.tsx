@@ -6,8 +6,11 @@ import { ShoppingCart } from "lucide-react";
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-32 items-center justify-between py-4"> {/* Hauteur doublée à h-32 */}
-        <Link to="/" className="text-2xl font-bold text-white hover:text-gray-200 transition-colors">
+      <div className="container flex h-32 items-center justify-between py-4">
+        <Link
+          to="/"
+          className="text-2xl font-bold text-white bg-black px-6 py-3 rounded-full hover:bg-gray-800 transition-colors" // Ajout des classes pour l'ovale noir
+        >
           Le Cannelé de Paul M
         </Link>
         <nav>
