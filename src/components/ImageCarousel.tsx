@@ -18,7 +18,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
               <img
                 src={image}
                 alt={`Cannelé background ${index + 1}`}
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover filter-none" // Supprime explicitement tout filtre
               />
             </div>
           ))}

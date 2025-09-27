@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import ImageCarousel from "@/components/ImageCarousel"; // Import ImageCarousel
+import ImageCarousel from "@/components/ImageCarousel";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -23,8 +23,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow relative min-h-[calc(100vh-4rem)]"> {/* Ensure main takes full height, adjusting for header */}
-        <ImageCarousel images={carouselImages} /> {/* Place ImageCarousel here */}
+      <main className="flex-grow relative min-h-[calc(100vh-4rem)]">
+        <ImageCarousel images={carouselImages} />
+        {/* Superposition pour assombrir, sans flou, afin d'améliorer la lisibilité du texte */}
+        <div className="absolute inset-0 bg-black/30 z-[5]"></div>
         <div className="relative z-10 h-full w-full flex flex-col items-center justify-center">
           {children}
         </div>
