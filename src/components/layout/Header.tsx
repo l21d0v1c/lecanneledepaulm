@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <Link to="/">
           <Button
             variant="default"
-            className="text-base font-bold text-white bg-black px-10 py-8 rounded-full hover:bg-gray-800 transition-colors" // Ajustement du padding pour une ellipse plus "pleine"
+            className="text-base font-bold text-white bg-black px-8 py-8 rounded-full hover:bg-gray-800 transition-colors" // Largeur réduite (px-8)
           >
             Le Cannelé de Paul M
           </Button>
