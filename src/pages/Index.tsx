@@ -1,23 +1,10 @@
 import ProductList from "@/components/ProductList";
-import ImageCarousel from "@/components/ImageCarousel";
-
-const carouselImages = [
-  "/canneles-1.jpg",
-  "/canneles-2.jpg",
-  "/canneles-3.jpg",
-  "/canneles-4.jpg",
-  "/canneles-5.jpg",
-  "/canneles-6.jpg",
-  "/canneles-7.png",
-  "/canneles-8.jpg",
-  "/canneles-9.jpg",
-  "/canneles-10.jpg",
-];
+// ImageCarousel import removed as it's now in Layout.tsx
 
 const Index = () => {
   return (
-    <div className="relative h-full w-full flex flex-col items-center justify-center">
-      <ImageCarousel images={carouselImages} />
+    <div className="relative w-full flex flex-col items-center justify-center"> {/* Removed h-full as parent div in Layout handles it */}
+      {/* ImageCarousel removed from here */}
 
       {/* Content wrapper now includes container styling */}
       <div className="relative z-10 w-full max-w-4xl p-4 rounded-lg shadow-lg bg-white dark:bg-gray-800 container mx-auto py-8">
