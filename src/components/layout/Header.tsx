@@ -6,14 +6,14 @@ import { ShoppingCart } from "lucide-react"; // Import de l'icône ShoppingCart
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-32 items-center py-4 justify-between"> {/* Utilisation de justify-between pour espacer les éléments */}
+      <div className="container flex h-32 items-center py-4 relative"> {/* Ajout de 'relative' pour le positionnement absolu des enfants */}
         {/* Bouton "La Maison" à gauche */}
-        <Button variant="ghost" className="text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+        <Button variant="ghost" className="absolute left-0 text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
           La Maison
         </Button>
 
         {/* Conteneur pour le bouton central "Le Cannelé de Paul M" */}
-        <div className="flex-grow flex justify-center"> {/* Prend l'espace disponible et centre son contenu */}
+        <div className="absolute left-1/2 -translate-x-1/2"> {/* Centrage parfait avec positionnement absolu */}
           <Link to="/">
             <Button
               variant="default"
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Bouton Caddie à droite */}
-        <Button variant="ghost" size="icon" className="text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+        <Button variant="ghost" size="icon" className="absolute right-0 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
           <ShoppingCart className="h-6 w-6" />
         </Button>
       </div>
