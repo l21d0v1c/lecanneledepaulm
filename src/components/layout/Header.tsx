@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <Link to="/">
           <Button
             variant="default"
-            className="text-base font-bold text-white bg-black px-8 py-12 rounded-full hover:bg-gray-800 transition-colors flex flex-col justify-center items-center leading-tight border-2 border-[#f8ac54]" // Ajout de la bordure
+            className="text-base font-bold text-white bg-black px-8 py-12 rounded-full hover:bg-gray-800 transition-colors flex flex-col justify-center items-center leading-tight border-4 border-[#f8ac54]" // Bordure augmentée à border-4
           >
             <span>Le Cannelé de</span>
             <span>Paul M</span>
