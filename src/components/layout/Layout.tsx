@@ -25,8 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header />
       <main className="flex-grow relative min-h-[calc(100vh-4rem)]">
         <ImageCarousel images={carouselImages} />
-        {/* Superposition pour assombrir, sans flou, afin d'améliorer la lisibilité du texte */}
-        <div className="absolute inset-0 bg-black/30 z-[5]"></div>
+        {/* La superposition sombre a été supprimée pour une clarté maximale du carrousel */}
         <div className="relative z-10 h-full w-full flex flex-col items-center justify-center">
           {children}
         </div>
