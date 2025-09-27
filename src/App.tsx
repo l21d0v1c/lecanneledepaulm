@@ -5,17 +5,15 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Layout from "./components/layout/Layout"; // Import the new Layout component
+import Layout from "./components/layout/Layout";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
       <BrowserRouter>
-        <Layout> {/* Wrap Routes with Layout */}
+        <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
@@ -24,6 +22,9 @@ const App = () => (
         </Layout>
       </BrowserRouter>
     </TooltipProvider>
+    {/* Toaster et Sonner sont déplacés ici pour être des frères et sœurs du TooltipProvider */}
+    <Toaster />
+    <Sonner />
   </QueryClientProvider>
 );
 
