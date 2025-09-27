@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* max-width: 1280px; */ /* Supprimé pour permettre le plein écran */
+  /* margin: 0 auto; */    /* Supprimé pour permettre le plein écran */
+  /* padding: 2rem; */     /* Supprimé pour un contrôle total du layout par Tailwind */
+  /* text-align: center; */ /* Supprimé pour un contrôle total du layout par Tailwind */
+  min-height: 100vh; /* Assure que le root prend toute la hauteur de la fenêtre */
+  width: 100vw; /* Assure que le root prend toute la largeur de la fenêtre */
 }
 
 .logo {
