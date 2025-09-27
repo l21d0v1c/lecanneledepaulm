@@ -12,11 +12,9 @@ const carouselImages = [
   "/canneles-3.jpg",
   "/canneles-4.jpg",
   "/canneles-5.jpg",
-  // "/canneles-6.jpg", // Cette image n'existe pas dans le dossier public et a été retirée.
-  "/canneles-7.png",
-  "/canneles-8.jpg",
-  "/canneles-9.jpg",
-  "/canneles-10.jpg",
+  "/canneles-6.jpg", // Renommé de canneles-8.jpg
+  "/canneles-7.jpg", // Renommé de canneles-9.jpg
+  "/canneles-8.jpg", // Renommé de canneles-10.jpg
 ];
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
