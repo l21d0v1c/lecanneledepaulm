@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { ShoppingCart } from "lucide-react"; // Import de l'icône ShoppingCart
 
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-32 items-center justify-center py-4"> {/* Hauteur augmentée à h-32 pour contenir le bouton */}
+      <div className="container flex h-32 items-center py-4 space-x-4"> {/* Ajout de space-x-4 pour l'espacement */}
         <Link to="/">
           <Button
             variant="default"
@@ -15,7 +16,14 @@ const Header: React.FC = () => {
             <span>Paul M</span>
           </Button>
         </Link>
-        {/* La balise nav a été supprimée car elle est vide et n'est plus nécessaire pour le centrage */}
+        {/* Bouton "La Maison" */}
+        <Button variant="ghost" className="text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+          La Maison
+        </Button>
+        {/* Bouton Caddie */}
+        <Button variant="ghost" size="icon" className="text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+          <ShoppingCart className="h-6 w-6" />
+        </Button>
       </div>
     </header>
   );
