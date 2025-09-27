@@ -11,7 +11,7 @@ const OvalButton: React.FC<OvalButtonProps> = ({ children, className, ...props }
   return (
     <Button
       className={cn(
-        "h-[80px] w-[400px] rounded-full bg-black text-white text-2xl font-bold hover:bg-gray-800 transition-colors flex items-center justify-center",
+        "h-[90px] w-[450px] rounded-full bg-black text-white text-xl font-bold hover:bg-gray-800 transition-colors flex items-center justify-center",
         className
       )}
       {...props}
