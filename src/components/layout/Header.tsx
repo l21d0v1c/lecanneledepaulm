@@ -7,7 +7,7 @@ import OvalButton from "@/components/OvalButton";
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="flex w-full items-center justify-between px-4 py-8"> {/* 'h-56' supprimé, 'py-8' ajouté */}
+      <div className="flex w-full items-center justify-between px-4 py-12"> {/* 'py-8' changé en 'py-12' */}
         <OvalButton aria-label="Le Cannelé de Paul M">
           Le Cannelé de Paul M
         </OvalButton>
