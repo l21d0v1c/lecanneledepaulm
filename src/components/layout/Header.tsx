@@ -6,10 +6,10 @@ import { ShoppingCart } from "lucide-react";
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-black bg-transparent">
-      <div className="container flex h-32 items-center justify-between py-4">
+      <div className="container flex h-44 items-center justify-between py-4"> {/* Augmentation de la hauteur du header de h-32 à h-44 */}
         <Link
           to="/"
-          className="text-lg font-bold text-white bg-black px-6 py-12 rounded-full hover:bg-gray-800 transition-colors" // Augmentation du py-10 à py-12 et réduction de la taille de la police à text-lg
+          className="text-lg font-bold text-white bg-black px-6 py-12 rounded-full hover:bg-gray-800 transition-colors"
         >
           Le Cannelé de Paul M
         </Link>
