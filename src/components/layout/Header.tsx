@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="container flex h-32 items-center justify-between py-4">
         <Link
           to="/"
-          className="text-2xl font-bold text-white bg-black px-6 py-3 rounded-full hover:bg-gray-800 transition-colors" // Ajout des classes pour l'ovale noir
+          className="text-2xl font-bold text-white bg-black px-6 py-4 rounded-full hover:bg-gray-800 transition-colors" // Changement de py-3 à py-4 pour un ovale plus rond
         >
           Le Cannelé de Paul M
         </Link>
