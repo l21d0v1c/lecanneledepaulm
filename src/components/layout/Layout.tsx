@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <ImageCarousel images={carouselImages} />
       <Header />
       <SecondaryNavbar />
-      <main className="flex-grow relative z-10 pt-12">
+      <main className="flex-grow relative z-10 pt-[176px]"> {/* 32px (header) + 16px (secondary) + 128px de marge = 176px */}
         {children}
       </main>
     </div>
