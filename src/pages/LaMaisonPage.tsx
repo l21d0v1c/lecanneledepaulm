@@ -7,7 +7,7 @@ const LaMaisonPage: React.FC = () => {
       <Card className="flex flex-col bg-transparent shadow-none border border-white h-full w-full max-w-2xl">
         <CardHeader className="p-6 text-center">
           <CardTitle className="text-4xl md:text-5xl font-extrabold text-white mb-4 text-shadow-cannelé">
-            Notre Histoire
+            La Maison
           </CardTitle>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col justify-center p-6 text-center">
