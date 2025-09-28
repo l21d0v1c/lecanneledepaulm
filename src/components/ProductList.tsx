@@ -43,25 +43,25 @@ const products: Product[] = [
 
 const ProductList: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 w-full max-w-7xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-6 md:gap-8 w-full max-w-7xl">
       {products.map((product) => (
         <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white min-h-0">
-          <CardHeader className="p-3 md:p-4">
-            <CardTitle className="text-lg md:text-xl font-semibold">
+          <CardHeader className="p-4 md:p-6">
+            <CardTitle className="text-xl md:text-2xl font-semibold">
               <span className="text-shadow-cannelé text-foreground">
                 {product.name}
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex-grow flex flex-col justify-between p-3 md:p-4">
-            <p className="mb-3 md:mb-4 text-sm md:text-base text-shadow-cannelé text-foreground">
+          <CardContent className="flex-grow flex flex-col justify-between p-4 md:p-6">
+            <p className="mb-4 md:mb-6 text-base md:text-lg text-shadow-cannelé text-foreground">
               {product.description}
             </p>
-            <div className="flex items-center justify-between mt-2 md:mt-3">
-              <span className="text-xl md:text-2xl font-bold text-shadow-cannelé text-foreground">
+            <div className="flex items-center justify-between mt-4 md:mt-6">
+              <span className="text-2xl md:text-3xl font-bold text-shadow-cannelé text-foreground">
                 {product.price.toFixed(2)}€
               </span>
-              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm md:text-base py-2 px-4 md:px-5">
+              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-base md:text-lg py-3 px-6 md:px-8">
                 Ajouter
               </Button>
             </div>
