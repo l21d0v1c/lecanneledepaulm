@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         <div className="absolute left-1/2 -translate-x-1/2 flex items-center space-x-4">
           {/* Icône Instagram à gauche du bouton central */}
           <Link to="https://www.instagram.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
-            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center">
+            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center border-2 border-white rounded-full"> {/* Ajout de la bordure */}
               <Instagram className="h-16 w-16" />
             </Button>
           </Link>
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
 
           {/* Icône Facebook à droite du bouton central */}
           <Link to="https://www.facebook.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
-            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center">
+            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center border-2 border-white rounded-full"> {/* Ajout de la bordure */}
               <Facebook className="h-16 w-16" />
             </Button>
           </Link>
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
         {/* Bouton "Nous Contacter" à droite */}
         <Link to="/nous-contacter" className="absolute right-4">
           <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20">
-            Le contact {/* Texte du bouton modifié ici */}
+            Le contact
           </Button>
         </Link>
       </div>
