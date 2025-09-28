@@ -6,7 +6,7 @@ import { Instagram, Facebook } from "lucide-react";
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white bg-transparent">
-      <div className="container flex flex-col items-center py-4 px-4 sm:flex-row sm:justify-between sm:items-center sm:h-32">
+      <div className="container flex flex-col items-center py-4 px-4 min-h-[400px] sm:h-32 sm:flex sm:flex-row sm:justify-between sm:items-center"> {/* min-h augmenté pour les petits écrans */}
 
         {/* Small screen layout (visible below 640px) */}
         <div className="sm:hidden flex flex-col items-center w-full space-y-4">
