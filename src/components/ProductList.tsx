@@ -8,15 +8,22 @@ interface Product {
   description: string;
   price: number;
   imageUrl: string;
+  category: "classique" | "sale" | "sucre" | "creation";
+}
+
+interface ProductListProps {
+  category: "classique" | "sale" | "sucre" | "creation";
 }
 
 const products: Product[] = [
+  // Produits classiques (actuels)
   {
     id: "1",
     name: "Cannelé Traditionnel",
     description: "Le classique, croustillant à l'extérieur, moelleux à l'intérieur.",
     price: 2.50,
     imageUrl: "/placeholder.svg",
+    category: "classique"
   },
   {
     id: "2",
@@ -24,6 +31,7 @@ const products: Product[] = [
     description: "Une touche de cacao pour les amateurs de chocolat.",
     price: 2.80,
     imageUrl: "/placeholder.svg",
+    category: "classique"
   },
   {
     id: "3",
@@ -31,6 +39,7 @@ const products: Product[] = [
     description: "Une saveur intense de vanille et un soupçon de rhum.",
     price: 2.70,
     imageUrl: "/placeholder.svg",
+    category: "classique"
   },
   {
     id: "4",
@@ -38,14 +47,92 @@ const products: Product[] = [
     description: "Une douceur fondante avec une pointe de sel de Guérande.",
     price: 3.00,
     imageUrl: "/placeholder.svg",
+    category: "classique"
   },
+  // Produits salés
+  {
+    id: "5",
+    name: "Cannelé Fromage & Herbes",
+    description: "Un mélange subtil de fromage et d'herbes fraîches.",
+    price: 3.20,
+    imageUrl: "/placeholder.svg",
+    category: "sale"
+  },
+  {
+    id: "6",
+    name: "Cannelé Olive & Romarin",
+    description: "Le parfum méditerranéen de l'olive et du romarin.",
+    price: 3.10,
+    imageUrl: "/placeholder.svg",
+    category: "sale"
+  },
+  {
+    id: "7",
+    name: "Cannelé Tomate & Basilic",
+    description: "La fraîcheur de la tomate et du basilic.",
+    price: 3.00,
+    imageUrl: "/placeholder.svg",
+    category: "sale"
+  },
+  // Produits sucrés
+  {
+    id: "8",
+    name: "Cannelé Framboise",
+    description: "Une explosion de framboise acidulée.",
+    price: 3.30,
+    imageUrl: "/placeholder.svg",
+    category: "sucre"
+  },
+  {
+    id: "9",
+    name: "Cannelé Pistache",
+    description: "La douceur crémeuse de la pistache.",
+    price: 3.40,
+    imageUrl: "/placeholder.svg",
+    category: "sucre"
+  },
+  {
+    id: "10",
+    name: "Cannelé Noix de Coco",
+    description: "L'exotisme de la noix de coco.",
+    price: 3.20,
+    imageUrl: "/placeholder.svg",
+    category: "sucre"
+  },
+  // Créations spéciales
+  {
+    id: "11",
+    name: "Cannelé Or & Safran",
+    description: "Une création luxueuse au safran et feuille d'or.",
+    price: 5.00,
+    imageUrl: "/placeholder.svg",
+    category: "creation"
+  },
+  {
+    id: "12",
+    name: "Cannelé Champagne",
+    description: "La sophistication du champagne.",
+    price: 4.50,
+    imageUrl: "/placeholder.svg",
+    category: "creation"
+  },
+  {
+    id: "13",
+    name: "Cannelé Truffe",
+    description: "L'arôme rare et précieux de la truffe.",
+    price: 6.00,
+    imageUrl: "/placeholder.svg",
+    category: "creation"
+  }
 ];
 
-const ProductList: React.FC = () => {
+const ProductList: React.FC<ProductListProps> = ({ category }) => {
+  const filteredProducts = products.filter(product => product.category === category);
+
   return (
     <div className="w-full px-4">
       <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 md:gap-8 w-full max-w-7xl mx-auto">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full min-w-0">
             <CardHeader className="p-4 md:p-6">
               <CardTitle className="text-xl md:text-2xl font-semibold">

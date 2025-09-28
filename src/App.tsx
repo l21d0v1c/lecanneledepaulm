@@ -18,6 +18,9 @@ const App = () => (
         <Layout> {/* Wrap Routes with Layout */}
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/sales" element={<Index />} />
+            <Route path="/sucres" element={<Index />} />
+            <Route path="/creations" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

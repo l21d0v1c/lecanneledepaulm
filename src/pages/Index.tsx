@@ -1,20 +1,53 @@
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import ProductList from "@/components/ProductList";
 
+interface Product {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  category: "classique" | "sale" | "sucre" | "creation";
+}
+
 const Index = () => {
+  const location = useLocation();
+  const [currentCategory, setCurrentCategory] = useState<"classique" | "sale" | "sucre" | "creation">("classique");
+
+  useEffect(() => {
+    // Déterminer la catégorie basée sur l'URL
+    const path = location.pathname;
+    if (path === "/sales") {
+      setCurrentCategory("sale");
+    } else if (path === "/sucres") {
+      setCurrentCategory("sucre");
+    } else if (path === "/creations") {
+      setCurrentCategory("creation");
+    } else {
+      setCurrentCategory("classique");
+    }
+  }, [location.pathname]);
+
   return (
     <div className="relative w-full flex flex-col items-center justify-center">
-      {/* Section du titre et de la description - reste transparente sur le carrousel */}
-      <div className="relative z-10 w-full max-w-4xl container mx-auto"> {/* 'p-4' et 'pb-8' ont été retirés ici */}
+      {/* Section du titre et de la description */}
+      <div className="relative z-10 w-full max-w-4xl container mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-extrabold text-white mb-4">
-            Découvrez nos Cannelés Artisanaux
+            {currentCategory === "classique" && "Découvrez nos Cannelés Artisanaux"}
+            {currentCategory === "sale" && "Nos Cannelés Salés"}
+            {currentCategory === "sucre" && "Nos Cannelés Sucrés"}
+            {currentCategory === "creation" && "Nos Créations Spéciales"}
           </h1>
           <p className="text-lg text-white">
-            Chaque bouchée, un voyage gustatif.
+            {currentCategory === "classique" && "Chaque bouchée, un voyage gustatif."}
+            {currentCategory === "sale" && "Des saveurs salées innovantes."}
+            {currentCategory === "sucre" && "La douceur à son paroxysme."}
+            {currentCategory === "creation" && "L'innovation au service du goût."}
           </p>
         </div>
-        {/* ProductList est maintenant directement ici, sans conteneur opaque */}
-        <ProductList />
+        <ProductList category={currentCategory} />
       </div>
     </div>
   );
