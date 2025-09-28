@@ -12,13 +12,13 @@ const NousContacterPage: React.FC = () => {
         </CardHeader>
         <CardContent className="flex-grow flex flex-col justify-center p-6 text-center">
           <p className="mb-6 text-xl md:text-2xl text-black text-shadow-cannelé leading-relaxed">
-            Pour toute question, commande spéciale ou simplement pour discuter de nos délicieux cannelés, n'hésitez pas à nous contacter !
-            <br /><br />
-            Vous pouvez nous joindre par téléphone au : **06.76.79.55.10**
+            Commandez par Téléphone / SMS / Mail
             <br />
-            Ou par email à : **contact@lecannaledepaulm.fr**
-            <br /><br />
-            Nous sommes impatients de vous entendre !
+            Du lundi au samedi de 10h à 18H
+            <br />
+            Indiquez nom, quantité et délai.
+            <br />
+            Commandes à retirer au Haillan et sur vos marchés.
           </p>
         </CardContent>
       </Card>
