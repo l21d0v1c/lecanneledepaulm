@@ -274,18 +274,18 @@ const ProductList: React.FC<ProductListProps> = ({ category }) => {
       <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 md:gap-8 w-full max-w-7xl mx-auto">
         {filteredProducts.map((product) => (
           <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full min-w-0">
-            <CardHeader className="p-4 md:p-6 text-center"> {/* Ajout de text-center ici */}
-              <CardTitle className="text-xl md:text-2xl font-semibold">
+            <CardHeader className="p-4 md:p-6 text-center">
+              <CardTitle className="text-2xl md:text-3xl font-semibold"> {/* Agrandissement de la police ici */}
                 <span className="text-shadow-cannelé text-foreground">
                   {product.name}
                 </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="flex-grow flex flex-col justify-between p-4 md:p-6 text-center"> {/* Ajout de text-center ici */}
+            <CardContent className="flex-grow flex flex-col justify-between p-4 md:p-6 text-center">
               <p className="mb-4 md:mb-6 text-base md:text-lg text-shadow-cannelé text-foreground break-words">
                 {product.description}
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 min-w-0"> {/* Changé justify-between en justify-center */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 min-w-0">
                 <span className="text-2xl md:text-3xl font-bold text-shadow-cannelé text-foreground flex-shrink-0">
                   {product.price.toFixed(2)}€
                 </span>
