@@ -21,11 +21,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col relative">
       <ImageCarousel images={carouselImages} /> {/* z-[-1] */}
-      {/* Couche opaque fixe pour masquer le contenu sous les navbars transparentes */}
-      <div className="fixed top-0 left-0 w-full h-48 bg-black z-[29]"></div> {/* z-index ajusté à z-[29] */}
+      {/* La couche opaque fixe a été retirée */}
       <Header /> {/* z-40 */}
       <SecondaryNavbar /> {/* z-30 */}
-      <main className="flex-grow relative z-10">
+      <main className="flex-grow relative z-10 pt-48 bg-background"> {/* Ajout de pt-48 et bg-background */}
         {children}
       </main>
     </div>
