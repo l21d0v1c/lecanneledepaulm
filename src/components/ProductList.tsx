@@ -1,15 +1,8 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
-interface Product {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  imageUrl: string;
-  category: "classique" | "sale" | "sucre" | "creation";
-}
+import { useCart } from "@/context/CartContext"; // Import du hook useCart
+import { Product } from "@/types"; // Import du type Product
 
 interface ProductListProps {
   category: "classique" | "sale" | "sucre" | "creation";
@@ -263,6 +256,7 @@ const products: Product[] = [
 ];
 
 const ProductList: React.FC<ProductListProps> = ({ category }) => {
+  const { addToCart } = useCart(); // Utilisation du hook useCart
   const filteredProducts = products.filter(product => product.category === category);
 
   return (
@@ -286,6 +280,7 @@ const ProductList: React.FC<ProductListProps> = ({ category }) => {
                   {product.price.toFixed(2)}€
                 </span>
                 <Button
+                  onClick={() => addToCart(product)} // Ajout du produit au panier
                   className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap flex-shrink-0"
                 >
                   Ajouter
