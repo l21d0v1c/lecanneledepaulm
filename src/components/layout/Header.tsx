@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="container py-4 px-4 flex flex-col items-center sm:flex-row sm:justify-around sm:items-center sm:h-32">
 
         {/* Small screen layout (visible below 640px) */}
-        <div className="sm:hidden flex flex-col w-full space-y-4">
+        <div className="sm:hidden flex flex-row w-full space-y-4">
           {/* Première div: La Maison + Instagram */}
           <div className="flex justify-center items-center space-x-4">
             <Link to="/la-maison">
