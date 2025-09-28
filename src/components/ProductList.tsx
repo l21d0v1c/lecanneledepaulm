@@ -192,7 +192,7 @@ const products: Product[] = [
   {
     id: "25",
     name: "Gros",
-    description: "La douceur de la pomme et la chaleur de la cannelle.",
+    description: "Deux boîtes de neuf.",
     price: 2.90,
     imageUrl: "/placeholder.svg",
     category: "sucre"
