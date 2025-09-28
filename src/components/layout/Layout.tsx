@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <ImageCarousel images={carouselImages} /> {/* z-[-1] */}
       <Header /> {/* z-40 */}
       <SecondaryNavbar /> {/* z-30 */}
-      <main className="flex-grow relative z-10 pt-37"> {/* bg-background a été retiré pour rendre le contenu transparent, pt-40 changé en pt-37 */}
+      <main className="flex-grow relative z-10 pt-40"> {/* Augmenté le padding-top pour plus d'espace */}
         {children}
       </main>
     </div>
