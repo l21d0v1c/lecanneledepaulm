@@ -218,7 +218,7 @@ const products: Product[] = [
     id: "12",
     name: "Pain d'épices",
     description: "Savoureux.",
-    price: 4.50,
+    price: 8.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
   },
