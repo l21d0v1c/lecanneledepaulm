@@ -225,7 +225,7 @@ const products: Product[] = [
   {
     id: "13",
     name: "Pâtisseries",
-    description: "Banofee.",
+    description: "Banofee, Entre met chocolat,.",
     price: 6.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
