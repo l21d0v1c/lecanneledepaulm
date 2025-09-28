@@ -5,10 +5,10 @@ import { ShoppingCart } from "lucide-react"; // Import de l'icône ShoppingCart
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-white bg-transparent"> {/* Revert to transparent background and white border */}
+    <header className="sticky top-0 z-40 w-full border-b border-border bg-background"> {/* Revert: Changed bg-transparent to bg-background and border-white to border-border */}
       <div className="container flex h-32 items-center py-4 relative px-4">
         {/* Bouton "La Maison" à gauche */}
-        <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"> {/* Revert to original text colors */}
+        <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-foreground hover:bg-accent hover:text-accent-foreground"> {/* Revert: Adjusted text and hover colors */}
           La Maison
         </Button>
 
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Bouton Caddie à droite */}
-        <Button variant="ghost" size="icon" className="absolute right-4 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"> {/* Revert to original text colors */}
+        <Button variant="ghost" size="icon" className="absolute right-4 text-foreground hover:bg-accent hover:text-accent-foreground"> {/* Revert: Adjusted text and hover colors */}
           <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
         </Button>
       </div>
