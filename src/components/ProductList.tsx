@@ -191,7 +191,7 @@ const products: Product[] = [
   // Nouveaux produits sucrés
   {
     id: "25",
-    name: "Cannelé Pomme Cannelle",
+    name: "Gros",
     description: "La douceur de la pomme et la chaleur de la cannelle.",
     price: 2.90,
     imageUrl: "/placeholder.svg",
