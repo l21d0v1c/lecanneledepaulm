@@ -37,7 +37,7 @@ const products: Product[] = [
     id: "3",
     name: "Pudding de cannelé",
     description: "Le petit",
-    price: 2.70,
+    price: 3.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
