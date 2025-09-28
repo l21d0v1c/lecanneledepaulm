@@ -64,11 +64,15 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         "cannelé-orange": "#f8ac54", // Nouvelle couleur ajoutée ici
+        "loader-dark-bg": "#171717", // Nouvelle couleur pour l'arrière-plan du loader
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        'dancing-script': ['"Dancing Script"', 'cursive'], // Ajout de la police Dancing Script
       },
       keyframes: {
         "accordion-down": {
@@ -87,10 +91,26 @@ export default {
             height: "0",
           },
         },
+        // Keyframes pour le loader
+        animate: {
+          "0%, 10%, 90%, 100%": { width: "100px", height: "100px" },
+          "50%": { width: "150px", height: "150px" },
+        },
+        rotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "10%": { transform: "rotate(40deg)" },
+          "25%": { transform: "rotate(90deg)" },
+          "50%": { transform: "rotate(180deg)" },
+          "75%": { transform: "rotate(270deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // Animations pour le loader
+        animate: "animate 1s linear infinite",
+        rotate: "rotate 2s linear infinite",
       },
     },
   },
@@ -100,6 +120,18 @@ export default {
       addUtilities({
         '.text-shadow-cannelé': {
           textShadow: `2px 2px 4px ${theme('colors.cannelé-orange')}`, // Ombre de texte ajustée pour moins d'intensité
+        },
+        // Nouvel utilitaire pour l'ombre de texte du loader
+        '.text-shadow-loader-dark': {
+          textShadow: `-2px -2px ${theme('colors.loader-dark-bg')}`,
+        },
+        // Nouvel utilitaire pour le contour de texte du loader
+        '.text-stroke-loader-dark': {
+          '-webkit-text-stroke': `0.5px ${theme('colors.loader-dark-bg')}`,
+        },
+        // Nouvel utilitaire pour l'ombre de boîte des images du loader
+        '.box-shadow-cannelé-sm': {
+          boxShadow: `0 0 5px ${theme('colors.cannelé-orange')}`,
         },
       });
     }),
