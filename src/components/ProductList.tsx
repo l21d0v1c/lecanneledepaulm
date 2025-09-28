@@ -77,7 +77,7 @@ const products: Product[] = [
   // Produits sucrés
   {
     id: "8",
-    name: "Cannelé Framboise",
+    name: "Les ",
     description: "Une explosion de framboise acidulée.",
     price: 3.30,
     imageUrl: "/placeholder.svg",
