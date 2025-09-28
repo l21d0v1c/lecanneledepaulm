@@ -143,7 +143,7 @@ const products: Product[] = [
     id: "5",
     name: "Mini",
     description: "Un sachet de dix.",
-    price: 3.20,
+    price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
@@ -151,7 +151,7 @@ const products: Product[] = [
     id: "6",
     name: "Mini",
     description: "Une boîte de vingt-quatre.",
-    price: 3.10,
+    price: 10.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
@@ -159,7 +159,7 @@ const products: Product[] = [
     id: "7",
     name: "Mini",
     description: "Deux boîte de vingt-quatre.",
-    price: 3.00,
+    price: 18.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
