@@ -16,7 +16,7 @@ interface ProductListProps {
 }
 
 const products: Product[] = [
-  // Nouveaux produits salés (IDs 1, 2, 3)
+  // Produits salés (actuels)
   {
     id: "1",
     name: "Mini",
@@ -41,17 +41,17 @@ const products: Product[] = [
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
-  // Produits sucrés (actuels)
+  // Nouveaux produits sucrés
   {
-    id: "8",
+    id: "4",
     name: "Mini",
-    description: "Un sachet de dix.",
+    description: "Un sachet de 10.",
     price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
   {
-    id: "9",
+    id: "5",
     name: "Gros",
     description: "Une boîte de neuf.",
     price: 12.00,
@@ -59,26 +59,26 @@ const products: Product[] = [
     category: "sucre"
   },
   {
-    id: "27", 
-    name: "Pudding de cannelé",
-    description: "Un dessert gourmand à base de cannelés recyclés.",
-    price: 4.00,
+    id: "6",
+    name: "Mini",
+    description: "Une boîte de 24.",
+    price: 10.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
   {
-    id: "28", 
-    name: "Pâtisseries",
-    description: "Assortiment de petites pâtisseries fines.",
-    price: 15.00,
+    id: "7",
+    name: "Gros",
+    description: "Deux boîtes de neuf.",
+    price: 22.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
   {
-    id: "29", 
-    name: "Pain d'épices",
-    description: "Un pain d'épices moelleux et parfumé.",
-    price: 8.00,
+    id: "8",
+    name: "Mini",
+    description: "Deux boîtes de 24.",
+    price: 18.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
