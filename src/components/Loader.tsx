@@ -7,10 +7,10 @@ const Loader: React.FC = () => {
         <h1>Cuisson en cours..</h1>
       </div>
       <div className="loader absolute top-1/2 left-[32%] -translate-y-1/2 w-[100px] h-[100px] animate-animate">
-        <div className="photo flex absolute inset-0 items-center justify-center space-x-4"> {/* Ajout de space-x-4 */}
-          <img src="/logo2.png" alt="Logo" className="loader-logo h-[10em] w-[10em] rounded-full box-shadow-cannelé-sm animate-rotate" /> {/* m-[10px] retiré */}
-          <img src="/logo2.png" alt="Logo" className="loader-logo h-[10em] w-[10em] rounded-full box-shadow-cannelé-sm animate-rotate" /> {/* m-[10px] retiré */}
-          <img src="/logo2.png" alt="Logo" className="loader-logo h-[10em] w-[10em] rounded-full box-shadow-cannelé-sm animate-rotate" /> {/* m-[10px] retiré */}
+        <div className="photo flex absolute inset-0 items-center justify-center space-x-8"> {/* Augmentation de l'espacement à space-x-8 */}
+          <img src="/logo2.png" alt="Logo" className="loader-logo h-[10em] w-[10em] rounded-full box-shadow-cannelé-sm animate-rotate" />
+          <img src="/logo2.png" alt="Logo" className="loader-logo h-[10em] w-[10em] rounded-full box-shadow-cannelé-sm animate-rotate" />
+          <img src="/logo2.png" alt="Logo" className="loader-logo h-[10em] w-[10em] rounded-full box-shadow-cannelé-sm animate-rotate" />
         </div>
       </div>
     </div>
