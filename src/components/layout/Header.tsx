@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="container flex h-32 items-center py-4 relative px-4">
         {/* Bouton "La Maison" à gauche */}
         <Link to="/la-maison" className="absolute left-4">
-          <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3"> {/* Ajout de la bordure et ajustement du padding/arrondi */}
+          <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
             La Maison
           </Button>
         </Link>
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         <div className="absolute left-1/2 -translate-x-1/2 flex items-center space-x-4">
           {/* Icône Instagram à gauche du bouton central */}
           <Link to="https://www.instagram.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
-            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center border-2 border-white rounded-full">
+            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center"> {/* Suppression de la bordure */}
               <Instagram className="h-16 w-16" />
             </Button>
           </Link>
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
 
           {/* Icône Facebook à droite du bouton central */}
           <Link to="https://www.facebook.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
-            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center border-2 border-white rounded-full">
+            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center"> {/* Suppression de la bordure */}
               <Facebook className="h-16 w-16" />
             </Button>
           </Link>
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
 
         {/* Bouton "Le contact" à droite */}
         <Link to="/nous-contacter" className="absolute right-4">
-          <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3"> {/* Ajout de la bordure et ajustement du padding/arrondi */}
+          <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
             Le contact
           </Button>
         </Link>
