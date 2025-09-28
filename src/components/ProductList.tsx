@@ -38,21 +38,18 @@ const ProductList: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
       {products.map((product) => (
-        <Card 
-          key={product.id} 
-          className="flex flex-col shadow-none border border-white bg-gradient-to-b from-white/80 to-white" // Ajout du dégradé ici
-        >
+        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white">
           <CardHeader>
-            <CardTitle className="text-xl font-semibold">
+            <CardTitle className="text-xl font-semibold"> {/* Suppression de text-cannelé-orange */}
               {product.name}
             </CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col justify-between">
-            <p className="mb-4">
+            <p className="mb-4"> {/* Suppression de text-cannelé-orange */}
               {product.description}
             </p>
             <div className="flex items-center justify-between mt-auto">
-              <span className="text-2xl font-bold">
+              <span className="text-2xl font-bold"> {/* Suppression de text-cannelé-orange */}
                 {product.price.toFixed(2)}€
               </span>
               <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full">Ajouter au panier</Button>
