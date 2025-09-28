@@ -42,7 +42,7 @@ const Index = () => {
                 Moelleux à cœur.
               </>
             )}
-            {currentCategory === "sale" && "Nos Cannelés Salés"}
+            {currentCategory === "sale" && "Dégustez chaque semaine trois parfums."}
             {currentCategory === "sucre" && "Nos Cannelés Sucrés"}
             {currentCategory === "creation" && "Nos Créations Spéciales"}
           </h1>
