@@ -86,7 +86,7 @@ const products: Product[] = [
   {
     id: "9",
     name: "Gros",
-    description: "une boîte de neuf.",
+    description: "Une boîte de neuf.",
     price: 12.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
@@ -94,7 +94,7 @@ const products: Product[] = [
   {
     id: "10",
     name: "mini",
-    description: "L'exotisme de la noix de coco.",
+    description: "Une boîte de vingt-quatre.",
     price: 3.20,
     imageUrl: "/placeholder.svg",
     category: "sucre"
