@@ -44,9 +44,9 @@ const products: Product[] = [
 const ProductList: React.FC = () => {
   return (
     <div className="w-full px-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-6 md:gap-8 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 3xl:grid-cols-4 gap-6 md:gap-8 w-full">
         {products.map((product) => (
-          <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full">
+          <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full min-w-0">
             <CardHeader className="p-4 md:p-6">
               <CardTitle className="text-xl md:text-2xl font-semibold">
                 <span className="text-shadow-cannelé text-foreground">
@@ -62,7 +62,7 @@ const ProductList: React.FC = () => {
                 <span className="text-2xl md:text-3xl font-bold text-shadow-cannelé text-foreground">
                   {product.price.toFixed(2)}€
                 </span>
-                <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4">
+                <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap">
                   Ajouter
                 </Button>
               </div>
