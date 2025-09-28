@@ -6,10 +6,10 @@ const Index = () => {
       {/* Le conteneur de contenu n'aura plus de fond pour laisser apparaître le carrousel en toute clarté */}
       <div className="relative z-10 w-full max-w-4xl p-4 rounded-lg container mx-auto py-8">
         <div className="text-center mb-8 mt-4">
-          <h1 className="text-4xl font-extrabold text-black mb-4"> {/* Changé de text-white à text-black */}
+          <h1 className="text-4xl font-extrabold text-white mb-4"> {/* Revert: Changed text-black to text-white */}
             Découvrez nos Cannelés Artisanaux
           </h1>
-          <p className="text-lg text-gray-800"> {/* Changé de text-white à text-gray-800 */}
+          <p className="text-lg text-white"> {/* Revert: Changed text-gray-800 to text-white */}
             Chaque bouchée, un voyage gustatif.
           </p>
         </div>
