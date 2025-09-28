@@ -4,20 +4,20 @@ import { Button } from "@/components/ui/button";
 
 const SecondaryNavbar: React.FC = () => {
   return (
-    <nav className="sticky top-32 w-full z-30 border-b border-border bg-background"> {/* Revert: Changed bg-transparent to bg-background and border-white to border-border */}
+    <nav className="sticky top-32 w-full z-30 border-b border-white bg-transparent"> {/* Transparent background, white border */}
       <div className="container flex h-16 items-center justify-center space-x-8 px-4">
         <Link to="/sales">
-          <Button variant="ghost" className="text-base font-medium text-muted-foreground hover:text-foreground"> {/* Revert: Adjusted text and hover colors */}
+          <Button variant="ghost" className="text-base font-medium text-white hover:text-gray-200"> {/* White text, subtle hover */}
             Salés
           </Button>
         </Link>
         <Link to="/sucres">
-          <Button variant="ghost" className="text-base font-medium text-muted-foreground hover:text-foreground"> {/* Revert: Adjusted text and hover colors */}
+          <Button variant="ghost" className="text-base font-medium text-white hover:text-gray-200"> {/* White text, subtle hover */}
             Sucrés
           </Button>
         </Link>
         <Link to="/creations">
-          <Button variant="ghost" className="text-base font-medium text-muted-foreground hover:text-foreground"> {/* Revert: Adjusted text and hover colors */}
+          <Button variant="ghost" className="text-base font-medium text-white hover:text-gray-200"> {/* White text, subtle hover */}
             Créations
           </Button>
         </Link>
