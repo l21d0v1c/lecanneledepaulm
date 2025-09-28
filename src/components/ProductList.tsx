@@ -74,24 +74,32 @@ const products: Product[] = [
     category: "classique"
   },
   {
-    id: "cl8",
-    name: "Salés", // Identique au 2ème produit salé
-    description: "Une boîte de 24.",
-    price: 10.00,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "cl9",
-    name: "Pudding de cannelés", // Identique au 2ème produit création
-    description: "Moyen",
+    id: "cl8", // Nouvel ID pour le produit inséré
+    name: "Mini", // Copie du 4ème produit sucré
+    description: "Un sachet de 10.",
     price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
   {
-    id: "cl10",
-    name: "Pâtisseries", // Identique au 6ème produit création
+    id: "cl9", // Ancien cl8, maintenant cl9
+    name: "Salés",
+    description: "Une boîte de 24.", // Identique au 2ème produit salé
+    price: 10.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl10", // Ancien cl9, maintenant cl10
+    name: "Pudding de cannelés",
+    description: "Moyen", // Identique au 2ème produit création
+    price: 5.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl11", // Ancien cl10, maintenant cl11
+    name: "Pâtisseries",
     description: "6x Banoffee ou Entremet chocolat ou Tarte Mojito ou Tarte Citron",
     price: 16.00,
     imageUrl: "/placeholder.svg",
