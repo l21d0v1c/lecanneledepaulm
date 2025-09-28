@@ -22,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="min-h-screen flex flex-col relative">
       <ImageCarousel images={carouselImages} />
       {/* Dégradé progressif pour masquer le contenu sous la navbar */}
-      <div className="fixed top-0 left-0 right-0 h-48 bg-gradient-to-b from-black to-transparent pointer-events-none z-20" />
+      <div className="fixed top-0 left-0 right-0 h-48 bg-gradient-to-b from-black via-black/90 to-transparent pointer-events-none z-30" />
       <Header />
       <SecondaryNavbar />
       <main className="flex-grow relative z-10 pt-12">

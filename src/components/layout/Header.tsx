@@ -5,7 +5,7 @@ import { ShoppingCart } from "lucide-react"; // Import de l'icône ShoppingCart
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-white bg-transparent"> {/* Transparent background, white border */}
+    <header className="sticky top-0 z-50 w-full border-b border-white bg-transparent"> {/* Z-index augmenté à 50 */}
       <div className="container flex h-32 items-center py-4 relative px-4">
         {/* Bouton "La Maison" à gauche */}
         <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-white hover:bg-white/20"> {/* White text, subtle hover */}
