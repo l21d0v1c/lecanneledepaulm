@@ -20,6 +20,13 @@ const LaMaisonPage: React.FC = () => {
             Consommateur depuis mon enfance je souhaite faire partager le vrai goût du véritable Cannelé.
             Je viens à votre rencontre toutes les semaines sur vos marchés, pour vous les faire découvrir.
             Je peux également vous livrer, n'hésitez pas à me contacter!
+            <br /><br />
+            Par mes expériences sur de nombreux cocktails,
+            je me suis assez vite rendu compte que le cannelé était une pièce importante.
+            J'ai été surpris de la qualité des retours que j'avais chez nous à Bordeaux.
+            Aujourd'hui j'ai envie de vous faire goûter cette recette de cannelé au rhum et à la vanille,
+            de vous faire découvrir mes recettes de cannelés salés et de partager avec vous
+            quelques unes de mes autres pâtisseries préférées toujours dans le but de régaler vos papilles.
           </p>
         </CardContent>
       </Card>
