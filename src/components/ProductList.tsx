@@ -46,7 +46,7 @@ const ProductList: React.FC = () => {
     <div className="w-full px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-6 md:gap-8 w-full max-w-7xl mx-auto">
         {products.map((product) => (
-          <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full min-w-[280px] max-w-[400px] mx-auto">
+          <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full w-full">
             <CardHeader className="p-4 md:p-6">
               <CardTitle className="text-xl md:text-2xl font-semibold">
                 <span className="text-shadow-cannelé text-foreground">
