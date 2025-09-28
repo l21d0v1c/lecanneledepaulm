@@ -141,7 +141,7 @@ const products: Product[] = [
   // Produits salés
   {
     id: "5",
-    name: "Cannelé Fromage & Herbes",
+    name: "Mini",
     description: "Un mélange subtil de fromage et d'herbes fraîches.",
     price: 3.20,
     imageUrl: "/placeholder.svg",
@@ -149,7 +149,7 @@ const products: Product[] = [
   },
   {
     id: "6",
-    name: "Cannelé Olive & Romarin",
+    name: "Mini",
     description: "Le parfum méditerranéen de l'olive et du romarin.",
     price: 3.10,
     imageUrl: "/placeholder.svg",
@@ -157,7 +157,7 @@ const products: Product[] = [
   },
   {
     id: "7",
-    name: "Cannelé Tomate & Basilic",
+    name: "Mini",
     description: "La fraîcheur de la tomate et du basilic.",
     price: 3.00,
     imageUrl: "/placeholder.svg",
