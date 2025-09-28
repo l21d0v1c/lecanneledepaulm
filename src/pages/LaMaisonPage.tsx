@@ -11,7 +11,7 @@ const LaMaisonPage: React.FC = () => {
           </CardTitle>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col justify-center p-6 text-center">
-          <p className="mb-6 text-lg md:text-xl text-black text-shadow-cannelé leading-relaxed">
+          <p className="mb-6 text-xl md:text-2xl text-black text-shadow-cannelé leading-relaxed">
             Bonjour ! Moi c’est Paul.
             Cuisinier pâtissier de formation, j'ai exercé depuis plus de 10 ans,
             en restaurants traditionnels, salon de thé, collectivités et traiteurs.
