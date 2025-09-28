@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin"; // Importez le plugin Tailwind
 
 export default {
   darkMode: ["class"],
@@ -93,5 +94,14 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    plugin(function ({ addUtilities, theme }) {
+      addUtilities({
+        '.text-shadow-cannelé': {
+          textShadow: `1px 1px 2px ${theme('colors.cannelé-orange')}`, // Ombre de texte avec la couleur cannelé-orange
+        },
+      });
+    }),
+  ],
 } satisfies Config;

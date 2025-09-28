@@ -40,16 +40,16 @@ const ProductList: React.FC = () => {
       {products.map((product) => (
         <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white">
           <CardHeader>
-            <CardTitle className="text-xl font-semibold"> {/* Suppression de text-cannelé-orange */}
+            <CardTitle className="text-xl font-semibold text-shadow-cannelé"> {/* Ajout de l'ombre au titre */}
               {product.name}
             </CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col justify-between">
-            <p className="mb-4"> {/* Suppression de text-cannelé-orange */}
+            <p className="mb-4 text-shadow-cannelé"> {/* Ajout de l'ombre à la description */}
               {product.description}
             </p>
             <div className="flex items-center justify-between mt-auto">
-              <span className="text-2xl font-bold"> {/* Suppression de text-cannelé-orange */}
+              <span className="text-2xl font-bold text-shadow-cannelé"> {/* Ajout de l'ombre au prix */}
                 {product.price.toFixed(2)}€
               </span>
               <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full">Ajouter au panier</Button>
