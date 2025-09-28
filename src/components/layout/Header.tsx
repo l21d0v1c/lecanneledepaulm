@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           {/* Icône Instagram à gauche du bouton central */}
           <Link to="https://www.instagram.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
             <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
-              <Instagram className="h-6 w-6" />
+              <Instagram className="h-8 w-8" /> {/* Taille augmentée ici */}
             </Button>
           </Link>
 
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           {/* Icône Facebook à droite du bouton central */}
           <Link to="https://www.facebook.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
             <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
-              <Facebook className="h-6 w-6" />
+              <Facebook className="h-8 w-8" /> {/* Taille augmentée ici */}
             </Button>
           </Link>
         </div>
