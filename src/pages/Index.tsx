@@ -43,7 +43,13 @@ const Index = () => {
               </>
             )}
             {currentCategory === "sale" && "Dégustez chaque semaine trois parfums."}
-            {currentCategory === "sucre" && "Nos Cannelés Sucrés"}
+            {currentCategory === "sucre" && (
+              <>
+                Caramélisé et bien croustillant à l'extérieur.
+                <br />
+                Moelleux à cœur.
+              </>
+            )}
             {currentCategory === "creation" && "Je vous propose régulièrement des petites pâtisseries."}
           </h1>
           <p className="text-lg text-white">
