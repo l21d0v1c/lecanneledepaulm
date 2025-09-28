@@ -28,7 +28,9 @@ const CartPage: React.FC = () => {
           {cartItems.map((item) => (
             <Card key={item.id} className="flex flex-col sm:flex-row items-center bg-transparent shadow-none border border-white p-4 md:p-6 text-black">
               <div className="flex-grow text-center sm:text-left">
-                <CardTitle className="text-xl font-semibold text-shadow-cannelé text-black">{item.name}</CardTitle>
+                <CardTitle className="text-xl font-semibold">
+                  <span className="text-shadow-cannelé text-black">{item.name}</span>
+                </CardTitle>
                 <p className="text-sm text-shadow-cannelé text-black">{item.description}</p>
                 <p className="text-lg font-bold mt-2 text-shadow-cannelé text-black">{(item.price * item.quantity).toFixed(2)}€</p>
               </div>
@@ -70,7 +72,9 @@ const CartPage: React.FC = () => {
 
           <Card className="bg-transparent shadow-none border border-white p-6 md:p-8 text-black">
             <CardHeader className="p-0 mb-4">
-              <CardTitle className="text-2xl font-bold text-shadow-cannelé text-black">Total du panier</CardTitle>
+              <CardTitle className="text-2xl font-bold">
+                <span className="text-shadow-cannelé text-black">Total du panier</span>
+              </CardTitle>
             </CardHeader>
             <CardContent className="p-0">
               <div className="flex justify-between items-center text-xl font-bold mb-6">
