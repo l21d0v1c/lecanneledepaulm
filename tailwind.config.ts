@@ -62,6 +62,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "cannelé-orange": "#f8ac54", // Nouvelle couleur ajoutée ici
       },
       borderRadius: {
         lg: "var(--radius)",
