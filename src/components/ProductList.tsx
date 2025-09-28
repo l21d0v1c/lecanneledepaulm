@@ -87,13 +87,13 @@ const products: Product[] = [
     id: "9",
     name: "Gros",
     description: "une boîte de neuf.",
-    price: 3.40,
+    price: 12.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
   {
     id: "10",
-    name: "Cannelé Noix de Coco",
+    name: "mini",
     description: "L'exotisme de la noix de coco.",
     price: 3.20,
     imageUrl: "/placeholder.svg",
