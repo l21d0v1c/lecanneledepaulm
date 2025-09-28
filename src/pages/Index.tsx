@@ -53,9 +53,9 @@ const Index = () => {
             {currentCategory === "creation" && "Je vous propose régulièrement des petites pâtisseries."}
           </h1>
           <p className="text-lg text-white text-shadow-cannelé">
-            {currentCategory === "classique" && "Goût équilibré entre vanille et rhum ambré."}
+            {currentCategory === "classique" && <span className="text-black">Goût équilibré entre vanille et rhum ambré.</span>}
             {currentCategory === "sale" && "Chèvre, miel, noix / Colin, citron, ciboulette / Chorizo, piment d'Espelette / Tomates confites, basilic / Saumon, citron, aneth / Chèvre, épinard / Poulet, estragon / Jambon, emmental / Carottes, cumin / ..."}
-            {currentCategory === "sucre" && "Goût équilibré entre vanille et rhum ambré."}
+            {currentCategory === "sucre" && <span className="text-black">Goût équilibré entre vanille et rhum ambré.</span>}
             {currentCategory === "creation" && ""}
           </p>
         </div>
