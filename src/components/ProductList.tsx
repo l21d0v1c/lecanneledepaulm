@@ -27,9 +27,9 @@ const products: Product[] = [
   },
   {
     id: "cl2",
-    name: "Mini", // Nom mis à jour
-    description: "Deux boîtes de 24.", // Description mise à jour
-    price: 18.00, // Prix mis à jour
+    name: "Mini", // Rétabli à son nom d'origine
+    description: "Deux boîtes de 24.", // Rétabli à sa description d'origine
+    price: 18.00, // Rétabli à son prix d'origine
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
