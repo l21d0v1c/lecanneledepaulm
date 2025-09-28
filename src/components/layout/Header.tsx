@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     <header className="sticky top-0 z-50 w-full border-b border-white bg-transparent">
       <div className="container flex h-32 items-center py-4 relative px-4">
         {/* Bouton "La Maison" à gauche */}
-        <Link to="/la-maison" className="absolute left-4"> {/* Le bouton "La Maison" pointe maintenant vers /la-maison */}
+        <Link to="/la-maison" className="absolute left-4">
           <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20">
             La Maison
           </Button>
@@ -30,7 +30,12 @@ const Header: React.FC = () => {
           </Link>
         </div>
 
-        {/* Le bouton Caddie est supprimé */}
+        {/* Bouton "Nous Contacter" à droite */}
+        <Link to="/nous-contacter" className="absolute right-4">
+          <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20">
+            Nous Contacter
+          </Button>
+        </Link>
       </div>
     </header>
   );
