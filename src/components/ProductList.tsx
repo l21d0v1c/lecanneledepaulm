@@ -57,12 +57,12 @@ const ProductList: React.FC = () => {
             <p className="mb-4 md:mb-6 text-base md:text-lg text-shadow-cannelé text-foreground">
               {product.description}
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mt-4">
               <span className="text-2xl md:text-3xl font-bold text-shadow-cannelé text-foreground">
                 {product.price.toFixed(2)}€
               </span>
-              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm md:text-base py-2 px-4 md:px-6 whitespace-nowrap w-full sm:w-auto">
-                Ajouter au panier
+              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap">
+                Ajouter
               </Button>
             </div>
           </CardContent>
