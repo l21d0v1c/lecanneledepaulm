@@ -134,6 +134,10 @@ export default {
         '.box-shadow-cannelé-sm': {
           boxShadow: `0 0 5px ${theme('colors.cannelé-orange')}`,
         },
+        // Nouvelle utilitaire pour l'ombre portée des icônes
+        '.drop-shadow-cannelé': {
+          filter: `drop-shadow(2px 2px 4px ${theme('colors.cannelé-orange')})`,
+        },
       });
     }),
   ],

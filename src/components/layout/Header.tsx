@@ -18,7 +18,7 @@ const Header: React.FC = () => {
               </Button>
             </Link>
             <Link to="https://www.instagram.com/le_cannele_de_paul_m/" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="text-white hover:bg-white/20 h-16 w-16 p-0 flex items-center justify-center">
+              <Button variant="ghost" className="text-white hover:bg-white/20 h-16 w-16 p-0 flex items-center justify-center drop-shadow-cannelé">
                 <Instagram className="h-12 w-12" />
               </Button>
             </Link>
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
           {/* Troisième div: Facebook + Le contact */}
           <div className="flex justify-center items-center space-x-4">
             <Link to="https://www.facebook.com/LeCanneleDePaul/" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="text-white hover:bg-white/20 h-16 w-16 p-0 flex items-center justify-center">
+              <Button variant="ghost" className="text-white hover:bg-white/20 h-16 w-16 p-0 flex items-center justify-center drop-shadow-cannelé">
                 <Facebook className="h-12 w-12" />
               </Button>
             </Link>
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
               </Button>
             </Link>
             <Link to="https://www.instagram.com/le_cannele_de_paul_m/" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center">
+              <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center drop-shadow-cannelé">
                 <Instagram className="h-16 w-16" />
               </Button>
             </Link>
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
           {/* Troisième div pour grands écrans */}
           <div className="flex items-center space-x-4">
             <Link to="https://www.facebook.com/LeCanneleDePaul/" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center">
+              <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center drop-shadow-cannelé">
                 <Facebook className="h-16 w-16" />
               </Button>
             </Link>
