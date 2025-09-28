@@ -16,128 +16,6 @@ interface ProductListProps {
 }
 
 const products: Product[] = [
-  // Produits classiques (actuels)
-  {
-    id: "1",
-    name: "Cannelé Traditionnel",
-    description: "Le classique, croustillant à l'extérieur, moelleux à l'intérieur.",
-    price: 2.50,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "2",
-    name: "Cannelé Chocolat",
-    description: "Une touche de cacao pour les amateurs de chocolat.",
-    price: 2.80,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "3",
-    name: "Cannelé Vanille-Rhum",
-    description: "Une saveur intense de vanille et un soupçon de rhum.",
-    price: 2.70,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "4",
-    name: "Cannelé Caramel Beurre Salé",
-    description: "Une douceur fondante avec une pointe de sel de Guérande.",
-    price: 3.00,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  // Nouveaux produits classiques
-  {
-    id: "14",
-    name: "Cannelé Café",
-    description: "L'arôme riche du café pour un réveil gourmand.",
-    price: 2.90,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "15",
-    name: "Cannelé Pistache",
-    description: "La délicatesse de la pistache dans un cannelé.",
-    price: 3.10,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "16",
-    name: "Cannelé Citron",
-    description: "Une touche acidulée et rafraîchissante.",
-    price: 2.70,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "17",
-    name: "Cannelé Noisette",
-    description: "Le goût authentique de la noisette torréfiée.",
-    price: 2.90,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "18",
-    name: "Cannelé Fleur d'Oranger",
-    description: "Une saveur douce et parfumée de fleur d'oranger.",
-    price: 2.80,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "19",
-    name: "Cannelé Spéculoos",
-    description: "Les épices du spéculoos pour une saveur hivernale.",
-    price: 3.00,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "20",
-    name: "Cannelé Coco",
-    description: "L'exotisme de la noix de coco râpée.",
-    price: 2.90,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "21",
-    name: "Cannelé Miel & Amande",
-    description: "La douceur du miel et le croquant de l'amande.",
-    price: 3.10,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "22",
-    name: "Cannelé Lavande",
-    description: "Une note florale subtile et originale.",
-    price: 3.20,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "23",
-    name: "Cannelé Gingembre",
-    description: "Une saveur piquante et réconfortante.",
-    price: 3.00,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
-  {
-    id: "24",
-    name: "Cannelé Praliné",
-    description: "Le goût intense et gourmand du praliné.",
-    price: 3.20,
-    imageUrl: "/placeholder.svg",
-    category: "classique"
-  },
   // Produits salés
   {
     id: "5",
@@ -181,55 +59,29 @@ const products: Product[] = [
     category: "sucre"
   },
   {
-    id: "10",
-    name: "mini",
-    description: "Une boîte de vingt-quatre.",
-    price: 10.00,
-    imageUrl: "/placeholder.svg",
-    category: "sucre"
-  },
-  // Nouveaux produits sucrés
-  {
-    id: "25",
-    name: "Cannelé Pomme Cannelle",
-    description: "La douceur de la pomme et la chaleur de la cannelle.",
-    price: 2.90,
+    id: "27", 
+    name: "Pudding de cannelé",
+    description: "Un dessert gourmand à base de cannelés recyclés.",
+    price: 4.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
   {
-    id: "26",
-    name: "Cannelé Poire Chocolat",
-    description: "L'alliance parfaite de la poire fondante et du chocolat.",
-    price: 3.10,
+    id: "28", 
+    name: "Pâtisseries",
+    description: "Assortiment de petites pâtisseries fines.",
+    price: 15.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
-  // Créations spéciales
   {
-    id: "11",
-    name: "Cannelé Or & Safran",
-    description: "Une création luxueuse au safran et feuille d'or.",
-    price: 5.00,
+    id: "29", 
+    name: "Pain d'épices",
+    description: "Un pain d'épices moelleux et parfumé.",
+    price: 8.00,
     imageUrl: "/placeholder.svg",
-    category: "creation"
+    category: "sucre"
   },
-  {
-    id: "12",
-    name: "Cannelé Champagne",
-    description: "La sophistication du champagne.",
-    price: 4.50,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "13",
-    name: "Cannelé Truffe",
-    description: "L'arôme rare et précieux de la truffe.",
-    price: 6.00,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  }
 ];
 
 const ProductList: React.FC<ProductListProps> = ({ category }) => {
