@@ -16,32 +16,32 @@ interface ProductListProps {
 }
 
 const products: Product[] = [
-  // Produits salés
+  // Nouveaux produits salés (IDs 1, 2, 3)
   {
-    id: "5",
-    name: "Cannelé Fromage & Herbes",
-    description: "Un mélange subtil de fromage et d'herbes fraîches.",
-    price: 3.20,
+    id: "1",
+    name: "Cannelé Salé Mini (Sachet de 10)",
+    description: "Un sachet de 10 cannelés salés.",
+    price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
   {
-    id: "6",
-    name: "Cannelé Olive & Romarin",
-    description: "Le parfum méditerranéen de l'olive et du romarin.",
-    price: 3.10,
+    id: "2",
+    name: "Cannelé Salé (Boîte de 24)",
+    description: "Une boîte de 24 cannelés salés.",
+    price: 10.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
   {
-    id: "7",
-    name: "Cannelé Tomate & Basilic",
-    description: "La fraîcheur de la tomate et du basilic.",
-    price: 3.00,
+    id: "3",
+    name: "Cannelé Salé (Deux Boîtes de 24)",
+    description: "Deux boîtes de 24 cannelés salés.",
+    price: 18.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
-  // Produits sucrés
+  // Produits sucrés (actuels)
   {
     id: "8",
     name: "Mini",
