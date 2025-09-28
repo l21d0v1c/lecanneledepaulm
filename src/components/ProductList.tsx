@@ -38,7 +38,7 @@ const ProductList: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
       {products.map((product) => (
-        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-black">
+        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white"> {/* Changement de border-black à border-white */}
           <CardHeader>
             <CardTitle className="text-xl font-semibold">
               {product.name}
@@ -52,7 +52,7 @@ const ProductList: React.FC = () => {
               <span className="text-2xl font-bold">
                 {product.price.toFixed(2)}€
               </span>
-              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full">Ajouter au panier</Button> {/* Bordure réduite et arrondi ajouté */}
+              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full">Ajouter au panier</Button>
             </div>
           </CardContent>
         </Card>
