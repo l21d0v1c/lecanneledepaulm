@@ -43,25 +43,25 @@ const products: Product[] = [
 
 const ProductList: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 w-full max-w-6xl">
       {products.map((product) => (
-        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white">
-          <CardHeader className="p-3">
-            <CardTitle className="text-lg font-semibold">
+        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white min-h-0">
+          <CardHeader className="p-2 md:p-3">
+            <CardTitle className="text-base md:text-lg font-semibold">
               <span className="text-shadow-cannelé text-foreground">
                 {product.name}
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex-grow flex flex-col justify-between p-3">
-            <p className="mb-3 text-sm text-shadow-cannelé text-foreground">
+          <CardContent className="flex-grow flex flex-col justify-between p-2 md:p-3">
+            <p className="mb-2 md:mb-3 text-xs md:text-sm text-shadow-cannelé text-foreground">
               {product.description}
             </p>
-            <div className="flex items-center justify-between mt-2">
-              <span className="text-xl font-bold text-shadow-cannelé text-foreground">
+            <div className="flex items-center justify-between mt-1 md:mt-2">
+              <span className="text-lg md:text-xl font-bold text-shadow-cannelé text-foreground">
                 {product.price.toFixed(2)}€
               </span>
-              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-1 px-3">
+              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-xs md:text-sm py-1 px-2 md:px-3">
                 Ajouter
               </Button>
             </div>
