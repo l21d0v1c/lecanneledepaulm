@@ -52,9 +52,9 @@ const products: Product[] = [
   // Nouveaux produits classiques
   {
     id: "14",
-    name: "Pudding de cannelé",
-    description: "Le petit",
-    price: 3.00,
+     name: "Pain d'épices",
+    description: "Savoureux.",
+    price: 8.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
