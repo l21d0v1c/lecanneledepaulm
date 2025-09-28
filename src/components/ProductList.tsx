@@ -49,6 +49,46 @@ const products: Product[] = [
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
+  {
+    id: "cl5",
+    name: "Pain d'épices", // Identique au 4ème produit création
+    description: "Savoureux",
+    price: 8.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl6",
+    name: "Pâtisseries", // Identique au 5ème produit création
+    description: "1x Banoffee ou Entremet chocolat ou Tarte Mojito ou Tarte Citron",
+    price: 3.50,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl7",
+    name: "Mini", // Identique au 3ème produit sucré
+    description: "Une boîte de 24.",
+    price: 10.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl8",
+    name: "Mini", // Identique au 2ème produit salé
+    description: "Une boîte de 24.",
+    price: 10.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl9",
+    name: "Pudding de cannelés", // Identique au 2ème produit création
+    description: "Moyen",
+    price: 5.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
   // Produits salés (actuels)
   {
     id: "1",
