@@ -19,9 +19,9 @@ const products: Product[] = [
   // Produits classiques (actuels)
   {
     id: "1",
-    name: "Cannelé Traditionnel",
-    description: "Le classique, croustillant à l'extérieur, moelleux à l'intérieur.",
-    price: 2.50,
+    name: "Mini",
+    description: "Un sachet de dix.",
+    price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
