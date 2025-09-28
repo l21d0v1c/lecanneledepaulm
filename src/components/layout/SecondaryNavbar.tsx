@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const SecondaryNavbar: React.FC = () => {
   return (
-    <nav className="w-full bg-white shadow-sm z-30 relative"> {/* Ajout d'un fond blanc et d'une ombre */}
+    <nav className="w-full z-30 relative"> {/* Suppression de bg-white et shadow-sm */}
       <div className="container flex h-16 items-center justify-center space-x-8 px-4">
         <Link to="/boutique">
           <Button variant="ghost" className="text-base font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
