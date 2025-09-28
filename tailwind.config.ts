@@ -72,7 +72,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        'dancing-script': ['"Dancing Script"', 'cursive'], // Ajout de la police Dancing Script
+        'dancing-script': ['"Dancing Script"', 'cursive'],
+        'cormorant-garamond': ['"Cormorant Garamond"', 'serif'], // Ajout de la police Cormorant Garamond
       },
       keyframes: {
         "accordion-down": {
