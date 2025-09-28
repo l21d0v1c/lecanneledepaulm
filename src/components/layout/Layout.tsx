@@ -21,8 +21,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col relative">
       <ImageCarousel images={carouselImages} />
-      {/* Masque dégradé uniquement sur le bas de la navbar secondaire */}
-      <div className="fixed top-[128px] left-0 right-0 h-8 bg-gradient-to-b from-black/80 to-transparent pointer-events-none z-40" />
       <Header />
       <SecondaryNavbar />
       <main className="flex-grow relative z-10">
