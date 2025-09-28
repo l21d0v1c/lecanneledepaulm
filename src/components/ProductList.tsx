@@ -251,14 +251,14 @@ const products: Product[] = [
     id: "29",
     name: "Pudding de cannelé",
     description: "Le grand",
-    price: 3.00,
+    price: 8.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
   },
   {
     id: "30",
     name: "Pâtisseries",
-    description: "Banofee, Entre met chocolat, Tarte mojito, Tarte citron.",
+    description: "1X Banofee ou Entre met chocolat ou Tarte mojito ou Tarte citron.",
     price: 3.50,
     imageUrl: "/placeholder.svg",
     category: "creation"
