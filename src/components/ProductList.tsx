@@ -27,7 +27,7 @@ const products: Product[] = [
   },
   {
     id: "2",
-    name: "Cannelé Chocolat",
+    name: "Salés",
     description: "Une touche de cacao pour les amateurs de chocolat.",
     price: 2.80,
     imageUrl: "/placeholder.svg",
