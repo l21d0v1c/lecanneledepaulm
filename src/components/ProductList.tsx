@@ -40,19 +40,19 @@ const ProductList: React.FC = () => {
       {products.map((product) => (
         <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-black">
           <CardHeader>
-            <CardTitle className="text-xl font-semibold"> {/* Removed text-white */}
+            <CardTitle className="text-xl font-semibold">
               {product.name}
             </CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col justify-between">
-            <p className="mb-4"> {/* Removed text-white */}
+            <p className="mb-4">
               {product.description}
             </p>
             <div className="flex items-center justify-between mt-auto">
-              <span className="text-2xl font-bold"> {/* Removed text-white */}
+              <span className="text-2xl font-bold">
                 {product.price.toFixed(2)}€
               </span>
-              <Button>Ajouter au panier</Button>
+              <Button className="bg-black text-white border-4 border-[#f8ac54] hover:bg-gray-800">Ajouter au panier</Button> {/* Styles ajoutés ici */}
             </div>
           </CardContent>
         </Card>
