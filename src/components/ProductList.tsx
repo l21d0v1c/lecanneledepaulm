@@ -52,7 +52,7 @@ const ProductList: React.FC = () => {
               <span className="text-2xl font-bold">
                 {product.price.toFixed(2)}€
               </span>
-              <Button className="bg-black text-white border-4 border-[#f8ac54] hover:bg-gray-800">Ajouter au panier</Button> {/* Styles ajoutés ici */}
+              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full">Ajouter au panier</Button> {/* Bordure réduite et arrondi ajouté */}
             </div>
           </CardContent>
         </Card>
