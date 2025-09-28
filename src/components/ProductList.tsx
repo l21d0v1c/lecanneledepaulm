@@ -46,19 +46,19 @@ const ProductList: React.FC = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
       {products.map((product) => (
         <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white">
-          <CardHeader>
+          <CardHeader className="p-4"> {/* Réduction du padding */}
             <CardTitle className="text-xl font-semibold">
-              <span className="text-shadow-cannelé text-foreground"> {/* Changé de text-white à text-foreground */}
+              <span className="text-shadow-cannelé text-foreground">
                 {product.name}
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex-grow flex flex-col justify-between">
-            <p className="mb-4 text-shadow-cannelé text-foreground"> {/* Changé de text-white à text-foreground */}
+          <CardContent className="flex-grow flex flex-col justify-between p-4"> {/* Réduction du padding */}
+            <p className="mb-4 text-shadow-cannelé text-foreground">
               {product.description}
             </p>
             <div className="flex items-center justify-between mt-auto">
-              <span className="text-2xl font-bold text-shadow-cannelé text-foreground"> {/* Changé de text-white à text-foreground */}
+              <span className="text-2xl font-bold text-shadow-cannelé text-foreground">
                 {product.price.toFixed(2)}€
               </span>
               <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full">Ajouter au panier</Button>
