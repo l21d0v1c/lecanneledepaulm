@@ -84,9 +84,9 @@ const products: Product[] = [
   },
   {
     id: "18",
-    name: "Cannelé Fleur d'Oranger",
-    description: "Une saveur douce et parfumée de fleur d'oranger.",
-    price: 2.80,
+    name: "Pudding de cannelé",
+    description: "Le moyen",
+    price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
