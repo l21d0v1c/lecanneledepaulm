@@ -73,7 +73,7 @@ export default {
       },
       fontFamily: {
         'dancing-script': ['"Dancing Script"', 'cursive'],
-        'playfair-display': ['"Playfair Display"', 'serif'], // Mise à jour de la police
+        'cormorant-garamond': ['"Cormorant Garamond"', 'serif'], // Ajout de la police Cormorant Garamond
       },
       keyframes: {
         "accordion-down": {
