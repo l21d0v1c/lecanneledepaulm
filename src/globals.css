@@ -89,7 +89,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-cormorant-garamond font-bold; /* Application de la nouvelle police ici */
+    @apply bg-background text-foreground font-cormorant-garamond; /* Application de la nouvelle police ici */
   }
 }
 
