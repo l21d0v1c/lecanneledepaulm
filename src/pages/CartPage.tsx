@@ -27,7 +27,7 @@ const CartPage: React.FC = () => {
         <div className="space-y-6">
           {cartItems.map((item) => (
             <Card key={item.id} className="flex flex-col sm:flex-row items-center bg-transparent shadow-none border border-white p-4 md:p-6 text-white">
-              <img src={item.imageUrl} alt={item.name} className="w-24 h-24 object-cover rounded-md mr-4 mb-4 sm:mb-0" />
+              {/* L'image du produit a été supprimée ici */}
               <div className="flex-grow text-center sm:text-left">
                 <CardTitle className="text-xl font-semibold text-shadow-cannelé">{item.name}</CardTitle>
                 <p className="text-sm text-shadow-cannelé">{item.description}</p>
