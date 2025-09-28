@@ -115,7 +115,7 @@ const products: Product[] = [
   },
   {
     id: "cl13", // Nouveau produit
-    name: "Mini", // Copie du 3ème produit salé
+    name: "Salés", // Renommé en 'Salés'
     description: "Deux boîtes de 24.",
     price: 18.00,
     imageUrl: "/placeholder.svg",
