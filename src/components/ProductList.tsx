@@ -108,9 +108,9 @@ const products: Product[] = [
   },
   {
     id: "21",
-    name: "Cannelé Miel & Amande",
-    description: "La douceur du miel et le croquant de l'amande.",
-    price: 3.10,
+    name: "Mini",
+    description: "deux boîtes de vingt-quatre.",
+    price: 18.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
