@@ -10,7 +10,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 4000, stopOnInteraction: false })]);
 
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="fixed inset-0 overflow-hidden z-[-1]"> {/* Changé 'absolute' en 'fixed' et ajouté 'z-[-1]' */}
       <div className="embla h-full w-full" ref={emblaRef}>
         <div className="embla__container h-full">
           {images.map((image, index) => (
@@ -20,7 +20,6 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
                 alt={`Cannelé background ${index + 1}`}
                 className="absolute inset-0 h-full w-full object-cover filter-none"
               />
-              {/* Le numéro de l'image a été supprimé */}
             </div>
           ))}
         </div>
