@@ -77,7 +77,7 @@ const products: Product[] = [
   // Produits sucrés
   {
     id: "8",
-    name: "Les Mini",
+    name: "Mini",
     description: "Un sachet de dix.",
     price: 5.00,
     imageUrl: "/placeholder.svg",
