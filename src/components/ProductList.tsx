@@ -142,7 +142,7 @@ const products: Product[] = [
   {
     id: "5",
     name: "Mini",
-    description: "Un mélange subtil de fromage et d'herbes fraîches.",
+    description: "Un sachet de dix.",
     price: 3.20,
     imageUrl: "/placeholder.svg",
     category: "sale"
@@ -150,7 +150,7 @@ const products: Product[] = [
   {
     id: "6",
     name: "Mini",
-    description: "Le parfum méditerranéen de l'olive et du romarin.",
+    description: "Une boîte de vingt-quatre.",
     price: 3.10,
     imageUrl: "/placeholder.svg",
     category: "sale"
@@ -158,7 +158,7 @@ const products: Product[] = [
   {
     id: "7",
     name: "Mini",
-    description: "La fraîcheur de la tomate et du basilic.",
+    description: "Deux boîte de vingt-quatre.",
     price: 3.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
