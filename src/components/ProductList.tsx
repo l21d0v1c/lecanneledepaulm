@@ -229,7 +229,8 @@ const products: Product[] = [
     price: 3.50,
     imageUrl: "/placeholder.svg",
     category: "creation"
-  }
+  },
+  // Nouveaux Créations spéciales
   {
     id: "27",
     name: "Pudding de cannelé",
@@ -240,6 +241,22 @@ const products: Product[] = [
   },
   {
     id: "28",
+    name: "Pâtisseries",
+    description: "Banofee, Entre met chocolat, Tarte mojito, Tarte citron.",
+    price: 3.50,
+    imageUrl: "/placeholder.svg",
+    category: "creation"
+  },
+  {
+    id: "29",
+    name: "Pudding de cannelé",
+    description: "Le petit",
+    price: 3.00,
+    imageUrl: "/placeholder.svg",
+    category: "creation"
+  },
+  {
+    id: "30",
     name: "Pâtisseries",
     description: "Banofee, Entre met chocolat, Tarte mojito, Tarte citron.",
     price: 3.50,
