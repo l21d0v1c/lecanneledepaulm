@@ -35,7 +35,7 @@ const products: Product[] = [
   },
   {
     id: "cl3",
-    name: "Mini",
+    name: "Salés", // Nom mis à jour ici
     description: "Un sachet de 10.", // Identique au premier produit salé
     price: 5.00,
     imageUrl: "/placeholder.svg",
