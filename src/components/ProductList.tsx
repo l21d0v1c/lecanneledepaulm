@@ -27,9 +27,9 @@ const products: Product[] = [
   },
   {
     id: "cl2",
-    name: "Gros",
-    description: "Une boîte de neuf.", // Identique au deuxième produit sucré
-    price: 12.00,
+    name: "Mini", // Nom mis à jour
+    description: "Deux boîtes de 24.", // Description mise à jour
+    price: 18.00, // Prix mis à jour
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
@@ -107,9 +107,9 @@ const products: Product[] = [
   },
   {
     id: "cl12", // Nouveau produit
-    name: "Gros", // Copie du 5ème produit sucré
-    description: "Une boîte de neuf.",
-    price: 12.00,
+    name: "Mini", // Copie du 5ème produit sucré, nom mis à jour
+    description: "Deux boîtes de 24.", // Copie du 5ème produit sucré, description mise à jour
+    price: 18.00, // Copie du 5ème produit sucré, prix mis à jour
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
