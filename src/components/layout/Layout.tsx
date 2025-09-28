@@ -24,11 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header />
       <SecondaryNavbar />
       <main className="flex-grow relative z-10">
-        {/* Masque dégradé appliqué directement sur le contenu */}
-        <div className="relative">
-          <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/80 to-transparent pointer-events-none z-20" />
-          {children}
-        </div>
+        {children}
       </main>
     </div>
   );
