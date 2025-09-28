@@ -92,17 +92,17 @@ const products: Product[] = [
   },
   {
     id: "19",
-    name: "Cannelé Spéculoos",
-    description: "Les épices du spéculoos pour une saveur hivernale.",
-    price: 3.00,
+    name: "Gros",
+    description: "Deux boîtes de neuf.",
+    price: 22.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
   {
     id: "20",
-    name: "Cannelé Coco",
-    description: "L'exotisme de la noix de coco râpée.",
-    price: 2.90,
+    name: "Pâtisseries",
+    description: "6X Banofee ou Entre met chocolat ou Tarte mojito ou Tarte citron.",
+    price: 16.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
