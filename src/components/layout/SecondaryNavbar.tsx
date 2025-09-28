@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const SecondaryNavbar: React.FC = () => {
-  const buttonStyle = "bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap flex-shrink-0 text-center min-w-[120px]";
+  // Suppression de 'min-w-[120px]' et 'flex-shrink-0' pour permettre aux boutons de s'adapter
+  const buttonStyle = "bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap text-center";
 
   return (
-    <nav className="sticky top-[336px] sm:top-[128px] w-full z-40 border-b border-white bg-transparent"> {/* Ajustement de la valeur 'top' */}
+    <nav className="sticky top-[336px] sm:top-[128px] w-full z-40 border-b border-white bg-transparent">
       <div className="container grid grid-cols-3 gap-4 h-16 items-center px-4">
         <Link to="/sales" className="col-span-1 flex justify-center">
           <Button className={buttonStyle}>
