@@ -68,17 +68,17 @@ const products: Product[] = [
   },
   {
     id: "16",
-     name: "Pain d'épices",
-    description: "Savoureux.",
-    price: 8.00,
+    name: "mini",
+    description: "Une boîte de vingt-quatre.",
+    price: 10.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
   {
     id: "17",
-    name: "Cannelé Noisette",
-    description: "Le goût authentique de la noisette torréfiée.",
-    price: 2.90,
+    name: "Salés",
+    description: "Une boîte de vingt-quatre.",
+    price: 10.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
