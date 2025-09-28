@@ -2,12 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
-import { useCart } from '@/context/CartContext'; // Import useCart
 
 const Header: React.FC = () => {
-  const { items } = useCart(); // Utiliser le contexte du panier
-  const itemCount = items.reduce((count, item) => count + item.quantity, 0); // Calculer le nombre total d'articles
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white bg-transparent">
       <div className="container flex h-32 items-center py-4 relative px-4">
@@ -30,16 +26,10 @@ const Header: React.FC = () => {
         </div>
 
         {/* Bouton Caddie à droite */}
-        <Link to="/cart" className="absolute right-4"> {/* Wrap with Link */}
-          <Button variant="ghost" size="icon" className="relative text-white hover:bg-white/20">
-            <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
-            {itemCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-[#f8ac54] text-black rounded-full h-5 w-5 flex items-center justify-center text-xs font-bold">
-                {itemCount}
-              </span>
-            )}
-          </Button>
-        </Link>
+        <Button variant="ghost" size="icon" className="relative text-white hover:bg-white/20">
+          <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
+          {/* Le compteur d'articles sera réactivé si le panier est réimplémenté */}
+        </Button>
       </div>
     </header>
   );

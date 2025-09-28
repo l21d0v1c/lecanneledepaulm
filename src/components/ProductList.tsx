@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { useCart } from '@/context/CartContext'; // Import useCart
 
 interface Product {
   id: string;
@@ -234,7 +233,6 @@ const products: Product[] = [
 ];
 
 const ProductList: React.FC<ProductListProps> = ({ category }) => {
-  const { addItem } = useCart(); // Utiliser la fonction addItem du contexte
   const filteredProducts = products.filter(product => product.category === category);
 
   return (
@@ -259,7 +257,6 @@ const ProductList: React.FC<ProductListProps> = ({ category }) => {
                 </span>
                 <Button
                   className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap flex-shrink-0"
-                  onClick={() => addItem(product)} // Ajout de l'action au clic
                 >
                   Ajouter
                 </Button>
