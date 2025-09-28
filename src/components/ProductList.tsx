@@ -44,7 +44,7 @@ const products: Product[] = [
   {
     id: "4",
     name: "Gros",
-    description: "Une douceur fondante avec une pointe de sel de Guérande.",
+    description: "Une boîte de neuf.",
     price: 3.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
