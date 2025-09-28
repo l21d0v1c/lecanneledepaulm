@@ -6,7 +6,7 @@ const Loader: React.FC = () => {
       <div className="thinking absolute top-[20%] left-[30%] text-cannelé-orange text-4xl font-dancing-script text-shadow-loader-dark text-stroke-loader-dark backdrop-blur-[2px]">
         <h1>Cuisson en cours..</h1>
       </div>
-      <div className="loader absolute top-1/2 left-[32%] -translate-y-1/2"> {/* Suppression de w-[100px] h-[100px] animate-animate */}
+      <div className="loader absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[608px] h-[160px]"> {/* Ajout de w-[608px] h-[160px] et centrage */}
         <div className="photo flex absolute inset-0 items-center justify-center space-x-16">
           <img src="/logo2.png" alt="Logo" className="loader-logo h-[10em] w-[10em] rounded-full box-shadow-cannelé-sm animate-rotate" />
           <img src="/logo2.png" alt="Logo" className="loader-logo h-[10em] w-[10em] rounded-full box-shadow-cannelé-sm animate-rotate" />
