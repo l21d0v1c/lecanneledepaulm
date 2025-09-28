@@ -82,7 +82,7 @@ const products: Product[] = [
     category: "classique"
   },
   {
-    id: "cl9", // Ancien cl8, maintenant cl9
+    id: "cl9",
     name: "Salés",
     description: "Une boîte de 24.", // Identique au 2ème produit salé
     price: 10.00,
@@ -90,7 +90,7 @@ const products: Product[] = [
     category: "classique"
   },
   {
-    id: "cl10", // Ancien cl9, maintenant cl10
+    id: "cl10",
     name: "Pudding de cannelés",
     description: "Moyen", // Identique au 2ème produit création
     price: 5.00,
@@ -98,10 +98,42 @@ const products: Product[] = [
     category: "classique"
   },
   {
-    id: "cl11", // Ancien cl10, maintenant cl11
+    id: "cl11",
     name: "Pâtisseries",
     description: "6x Banoffee ou Entremet chocolat ou Tarte Mojito ou Tarte Citron",
     price: 16.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl12", // Nouveau produit
+    name: "Gros", // Copie du 5ème produit sucré
+    description: "Une boîte de neuf.",
+    price: 12.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl13", // Nouveau produit
+    name: "Mini", // Copie du 3ème produit salé
+    description: "Deux boîtes de 24.",
+    price: 18.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl14", // Nouveau produit
+    name: "Pudding de cannelés", // Copie du 3ème produit création
+    description: "Grand",
+    price: 8.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl15", // Nouveau produit
+    name: "Pâtisseries", // Copie du 7ème produit création
+    description: "8x Banoffee ou Entremet chocolat ou Tarte Mojito ou Tarte Citron",
+    price: 21.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
