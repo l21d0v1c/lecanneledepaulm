@@ -45,7 +45,7 @@ const products: Product[] = [
     id: "4",
     name: "Gros",
     description: "Une boîte de neuf.",
-    price: 3.00,
+    price: 12.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
