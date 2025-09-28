@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart } from "lucide-react"; // Import de l'icône ShoppingCart
+import { ShoppingCart } from "lucide-react";
+import { useCart } from '@/context/CartContext'; // Import useCart
 
 const Header: React.FC = () => {
+  const { items } = useCart(); // Utiliser le contexte du panier
+  const itemCount = items.reduce((count, item) => count + item.quantity, 0); // Calculer le nombre total d'articles
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white bg-transparent"> {/* Z-index augmenté à 50 */}
+    <header className="sticky top-0 z-50 w-full border-b border-white bg-transparent">
       <div className="container flex h-32 items-center py-4 relative px-4">
         {/* Bouton "La Maison" à gauche */}
-        <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-white hover:bg-white/20"> {/* White text, subtle hover */}
+        <Button variant="ghost" className="absolute left-4 text-base md:text-lg font-semibold text-white hover:bg-white/20">
           La Maison
         </Button>
 
@@ -26,9 +30,16 @@ const Header: React.FC = () => {
         </div>
 
         {/* Bouton Caddie à droite */}
-        <Button variant="ghost" size="icon" className="absolute right-4 text-white hover:bg-white/20"> {/* White icon, subtle hover */}
-          <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
-        </Button>
+        <Link to="/cart" className="absolute right-4"> {/* Wrap with Link */}
+          <Button variant="ghost" size="icon" className="relative text-white hover:bg-white/20">
+            <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
+            {itemCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-[#f8ac54] text-black rounded-full h-5 w-5 flex items-center justify-center text-xs font-bold">
+                {itemCount}
+              </span>
+            )}
+          </Button>
+        </Link>
       </div>
     </header>
   );
