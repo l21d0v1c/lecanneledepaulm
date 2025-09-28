@@ -225,7 +225,7 @@ const products: Product[] = [
   {
     id: "13",
     name: "Pâtisseries",
-    description: "L'arôme rare et précieux de la truffe.",
+    description: "Banofee.",
     price: 6.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
