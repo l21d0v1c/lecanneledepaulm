@@ -32,7 +32,7 @@ const Index = () => {
   return (
     <div className="relative w-full flex flex-col items-center justify-center">
       {/* Section du titre et de la description */}
-      <div className="relative z-10 w-full max-w-4xl container mx-auto pt-[330px] sm:pt-[165px]"> {/* Ajustement du padding-top ici */}
+      <div className="relative z-10 w-full max-w-4xl container mx-auto pt-[300px] sm:pt-[135px]"> {/* Ajustement du padding-top ici */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-extrabold text-white mb-4">
             {currentCategory === "classique" && "Découvrez nos Cannelés Artisanaux"}
