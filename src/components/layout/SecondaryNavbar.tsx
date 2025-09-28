@@ -7,7 +7,7 @@ const SecondaryNavbar: React.FC = () => {
 
   return (
     <nav className="sticky top-32 w-full z-40 border-b border-white bg-transparent">
-      <div className="container flex h-16 items-center justify-center space-x-8 px-4">
+      <div className="container flex h-16 items-center justify-around px-4"> {/* Changé 'justify-center space-x-8' en 'justify-around' */}
         <Link to="/sales">
           <Button className={buttonStyle}>
             Salés
