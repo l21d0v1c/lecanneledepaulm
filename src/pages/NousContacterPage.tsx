@@ -21,6 +21,12 @@ const NousContacterPage: React.FC = () => {
             Commandes à retirer au Haillan et sur vos marchés.
             <br /><br />
             lecanneledepaul@hotmail.com
+            <br /><br />
+            Sur les marchés:
+            <br />
+            Vendredi ==&gt; Saint-Aubin de Médoc
+            <br />
+            Samedi ==&gt; Saint-Médard-en-Jalles
           </p>
         </CardContent>
       </Card>
