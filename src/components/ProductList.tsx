@@ -75,8 +75,8 @@ const products: Product[] = [
   },
   {
     id: "cl8",
-    name: "Mini", // Identique au 2ème produit salé
-    description: "Une boîte de 24.",
+    name: "Salés", // Nom mis à jour ici
+    description: "Une boîte de 24.", // Identique au 2ème produit salé
     price: 10.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
