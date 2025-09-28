@@ -28,7 +28,7 @@ const products: Product[] = [
   {
     id: "cl2",
     name: "Gros", // Corrigé pour être 'Gros'
-    description: "Une boîte de neuf.", // Corrigé
+    description: "Une boîte de 9.", // Corrigé : "neuf" remplacé par "9"
     price: 12.00, // Corrigé
     imageUrl: "/placeholder.svg",
     category: "classique"
@@ -76,7 +76,7 @@ const products: Product[] = [
   {
     id: "cl8",
     name: "Gros", // Nom mis à jour
-    description: "Deux boîtes de neuf.", // Description mise à jour
+    description: "Deux boîtes de 9.", // Corrigé : "neuf" remplacé par "9"
     price: 22.00, // Prix mis à jour
     imageUrl: "/placeholder.svg",
     category: "classique"
@@ -174,7 +174,7 @@ const products: Product[] = [
   {
     id: "5",
     name: "Gros",
-    description: "Une boîte de neuf.",
+    description: "Une boîte de 9.", // Corrigé : "neuf" remplacé par "9"
     price: 12.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
@@ -190,7 +190,7 @@ const products: Product[] = [
   {
     id: "7",
     name: "Gros",
-    description: "Deux boîtes de neuf.",
+    description: "Deux boîtes de 9.", // Corrigé : "neuf" remplacé par "9"
     price: 22.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
