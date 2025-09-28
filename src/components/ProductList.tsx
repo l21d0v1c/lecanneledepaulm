@@ -32,6 +32,13 @@ const products: Product[] = [
     price: 2.70,
     imageUrl: "/placeholder.svg",
   },
+  {
+    id: "4",
+    name: "Cannelé Caramel Beurre Salé",
+    description: "Une douceur fondante avec une pointe de sel de Guérande.",
+    price: 3.00,
+    imageUrl: "/placeholder.svg",
+  },
 ];
 
 const ProductList: React.FC = () => {
