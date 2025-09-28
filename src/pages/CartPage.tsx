@@ -11,10 +11,10 @@ const CartPage: React.FC = () => {
 
   return (
     <div className="relative z-10 w-full max-w-4xl container mx-auto py-8 px-4">
-      <h1 className="text-4xl font-extrabold text-white mb-8 text-center">Votre Panier</h1>
+      <h1 className="text-4xl font-extrabold text-black mb-8 text-center">Votre Panier</h1>
 
       {cartItems.length === 0 ? (
-        <Card className="bg-transparent shadow-none border border-white text-white text-center p-8">
+        <Card className="bg-transparent shadow-none border border-white text-black text-center p-8">
           <CardTitle className="text-2xl mb-4">Votre panier est vide.</CardTitle>
           <p className="mb-6">Commencez à explorer nos délicieux cannelés !</p>
           <Link to="/">
@@ -26,12 +26,11 @@ const CartPage: React.FC = () => {
       ) : (
         <div className="space-y-6">
           {cartItems.map((item) => (
-            <Card key={item.id} className="flex flex-col sm:flex-row items-center bg-transparent shadow-none border border-white p-4 md:p-6 text-white">
-              {/* L'image du produit a été supprimée ici */}
+            <Card key={item.id} className="flex flex-col sm:flex-row items-center bg-transparent shadow-none border border-white p-4 md:p-6 text-black">
               <div className="flex-grow text-center sm:text-left">
-                <CardTitle className="text-xl font-semibold text-shadow-cannelé">{item.name}</CardTitle>
-                <p className="text-sm text-shadow-cannelé">{item.description}</p>
-                <p className="text-lg font-bold mt-2 text-shadow-cannelé">{(item.price * item.quantity).toFixed(2)}€</p>
+                <CardTitle className="text-xl font-semibold text-shadow-cannelé text-black">{item.name}</CardTitle>
+                <p className="text-sm text-shadow-cannelé text-black">{item.description}</p>
+                <p className="text-lg font-bold mt-2 text-shadow-cannelé text-black">{(item.price * item.quantity).toFixed(2)}€</p>
               </div>
               <div className="flex items-center space-x-2 mt-4 sm:mt-0">
                 <Button
@@ -46,7 +45,7 @@ const CartPage: React.FC = () => {
                   type="number"
                   value={item.quantity}
                   onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
-                  className="w-16 text-center bg-transparent border-white text-white"
+                  className="w-16 text-center bg-transparent border-white text-black"
                   min="1"
                 />
                 <Button
@@ -69,14 +68,14 @@ const CartPage: React.FC = () => {
             </Card>
           ))}
 
-          <Card className="bg-transparent shadow-none border border-white p-6 md:p-8 text-white">
+          <Card className="bg-transparent shadow-none border border-white p-6 md:p-8 text-black">
             <CardHeader className="p-0 mb-4">
-              <CardTitle className="text-2xl font-bold text-shadow-cannelé">Total du panier</CardTitle>
+              <CardTitle className="text-2xl font-bold text-shadow-cannelé text-black">Total du panier</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
               <div className="flex justify-between items-center text-xl font-bold mb-6">
-                <span className="text-shadow-cannelé">Total :</span>
-                <span className="text-shadow-cannelé">{cartTotal.toFixed(2)}€</span>
+                <span className="text-shadow-cannelé text-black">Total :</span>
+                <span className="text-shadow-cannelé text-black">{cartTotal.toFixed(2)}€</span>
               </div>
               <div className="flex flex-col sm:flex-row justify-end gap-4">
                 <Button
