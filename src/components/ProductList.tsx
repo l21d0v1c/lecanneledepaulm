@@ -16,6 +16,127 @@ interface ProductListProps {
 }
 
 const products: Product[] = [
+  // Produits classiques (ajoutés pour la page d'accueil)
+  {
+    id: "c1",
+    name: "Cannelé Classique",
+    description: "Le traditionnel, croustillant à l'extérieur, moelleux à l'intérieur. Sachet de 6.",
+    price: 8.50,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c2",
+    name: "Cannelé Classique",
+    description: "Le traditionnel, croustillant à l'extérieur, moelleux à l'intérieur. Sachet de 12.",
+    price: 16.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c3",
+    name: "Cannelé Classique",
+    description: "Le traditionnel, croustillant à l'extérieur, moelleux à l'intérieur. Boîte de 24.",
+    price: 30.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c4",
+    name: "Cannelé Vanille",
+    description: "Infusé à la vanille de Madagascar. Sachet de 6.",
+    price: 9.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c5",
+    name: "Cannelé Vanille",
+    description: "Infusé à la vanille de Madagascar. Sachet de 12.",
+    price: 17.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c6",
+    name: "Cannelé Rhum Vieux",
+    description: "Avec une touche de rhum ambré. Sachet de 6.",
+    price: 9.50,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c7",
+    name: "Cannelé Rhum Vieux",
+    description: "Avec une touche de rhum ambré. Sachet de 12.",
+    price: 18.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c8",
+    name: "Cannelé Fleur d'Oranger",
+    description: "Parfumé à la délicate fleur d'oranger. Sachet de 6.",
+    price: 9.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c9",
+    name: "Cannelé Fleur d'Oranger",
+    description: "Parfumé à la délicate fleur d'oranger. Sachet de 12.",
+    price: 17.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c10",
+    name: "Cannelé Citron",
+    description: "Zeste de citron frais pour une note acidulée. Sachet de 6.",
+    price: 9.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c11",
+    name: "Cannelé Citron",
+    description: "Zeste de citron frais pour une note acidulée. Sachet de 12.",
+    price: 17.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c12",
+    name: "Cannelé Café",
+    description: "Infusé au café intense. Sachet de 6.",
+    price: 9.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c13",
+    name: "Cannelé Café",
+    description: "Infusé au café intense. Sachet de 12.",
+    price: 17.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c14",
+    name: "Cannelé Caramel Beurre Salé",
+    description: "Une touche gourmande de caramel. Sachet de 6.",
+    price: 9.50,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "c15",
+    name: "Cannelé Caramel Beurre Salé",
+    description: "Une touche gourmande de caramel. Sachet de 12.",
+    price: 18.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
   // Produits salés (actuels)
   {
     id: "1",
