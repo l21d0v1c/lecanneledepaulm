@@ -85,8 +85,8 @@ const products: Product[] = [
   },
   {
     id: "9",
-    name: "Cannelé Pistache",
-    description: "La douceur crémeuse de la pistache.",
+    name: "Gros",
+    description: "une boite.",
     price: 3.40,
     imageUrl: "/placeholder.svg",
     category: "sucre"
