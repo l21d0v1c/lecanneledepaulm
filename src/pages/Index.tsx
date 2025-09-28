@@ -47,7 +47,7 @@ const Index = () => {
             {currentCategory === "creation" && "Nos Créations Spéciales"}
           </h1>
           <p className="text-lg text-white">
-            {currentCategory === "classique" && "Chaque bouchée, un voyage gustatif."}
+            {currentCategory === "classique" && "Goût équilibré entre vanille et rhum ambré."}
             {currentCategory === "sale" && "Des saveurs salées innovantes."}
             {currentCategory === "sucre" && "La douceur à son paroxysme."}
             {currentCategory === "creation" && "L'innovation au service du goût."}
