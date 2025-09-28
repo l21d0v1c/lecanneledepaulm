@@ -43,7 +43,7 @@ const products: Product[] = [
   },
   {
     id: "4",
-    name: "Cannelé Caramel Beurre Salé",
+    name: "Gros",
     description: "Une douceur fondante avec une pointe de sel de Guérande.",
     price: 3.00,
     imageUrl: "/placeholder.svg",
