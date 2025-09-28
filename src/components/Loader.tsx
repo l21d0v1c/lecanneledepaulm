@@ -20,7 +20,7 @@ const Loader: React.FC = () => {
 
   return (
     <div className="loader-overlay fixed inset-0 bg-loader-dark-bg z-[9999]">
-      <div className={`thinking absolute top-[20%] text-cannelé-orange text-4xl font-dancing-script text-shadow-loader-dark text-stroke-loader-dark backdrop-blur-[2px] ${isSmallScreen ? 'left-1/2 -translate-x-1/2 text-center' : 'left-[30%]'}`}>
+      <div className={`thinking absolute top-[20%] text-cannelé-orange text-4xl font-cormorant-garamond text-shadow-loader-dark text-stroke-loader-dark backdrop-blur-[2px] ${isSmallScreen ? 'left-1/2 -translate-x-1/2 text-center' : 'left-[30%]'}`}>
         <h1>Cuisson en cours..</h1>
       </div>
       <div className={`loader absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${isSmallScreen ? '' : 'w-[608px] h-[160px]'}`}>
