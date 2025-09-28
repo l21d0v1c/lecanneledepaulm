@@ -44,7 +44,7 @@ const Header: React.FC = () => {
         {/* Bouton "Nous Contacter" à droite */}
         <Link to="/nous-contacter" className="absolute right-4">
           <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20">
-            Nous Contacter
+            Le contact {/* Texte du bouton modifié ici */}
           </Button>
         </Link>
       </div>
