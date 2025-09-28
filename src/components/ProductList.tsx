@@ -217,7 +217,7 @@ const products: Product[] = [
   {
     id: "12",
     name: "Pain d'épices",
-    description: "La sophistication du champagne.",
+    description: "Savoureux.",
     price: 4.50,
     imageUrl: "/placeholder.svg",
     category: "creation"
