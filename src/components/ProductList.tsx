@@ -82,7 +82,7 @@ const products: Product[] = [
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
-  // Nouveaux produits créations
+  // Produits créations corrigés
   {
     id: "9",
     name: "Pudding de cannelés",
@@ -118,7 +118,7 @@ const products: Product[] = [
   {
     id: "13",
     name: "Pâtisseries",
-    description: "Banoffee",
+    description: "Banoffee, Entre mes chocolats, Tarte Mojito, Tarte Citron",
     price: 3.50,
     imageUrl: "/placeholder.svg",
     category: "creation"
@@ -126,7 +126,7 @@ const products: Product[] = [
   {
     id: "14",
     name: "Pâtisseries",
-    description: "Entre mes chocolats",
+    description: "Banoffee, Entre mes chocolats, Tarte Mojito, Tarte Citron",
     price: 16.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
@@ -134,79 +134,7 @@ const products: Product[] = [
   {
     id: "15",
     name: "Pâtisseries",
-    description: "Tarte Mojito",
-    price: 21.00,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "16",
-    name: "Pâtisseries",
-    description: "Tarte Citron",
-    price: 3.50,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "17",
-    name: "Pâtisseries",
-    description: "Banoffee",
-    price: 16.00,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "18",
-    name: "Pâtisseries",
-    description: "Entre mes chocolats",
-    price: 21.00,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "19",
-    name: "Pâtisseries",
-    description: "Tarte Mojito",
-    price: 3.50,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "20",
-    name: "Pâtisseries",
-    description: "Tarte Citron",
-    price: 16.00,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "21",
-    name: "Pâtisseries",
-    description: "Banoffee",
-    price: 21.00,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "22",
-    name: "Pâtisseries",
-    description: "Entre mes chocolats",
-    price: 3.50,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "23",
-    name: "Pâtisseries",
-    description: "Tarte Mojito",
-    price: 16.00,
-    imageUrl: "/placeholder.svg",
-    category: "creation"
-  },
-  {
-    id: "24",
-    name: "Pâtisseries",
-    description: "Tarte Citron",
+    description: "Banoffee, Entre mes chocolats, Tarte Mojito, Tarte Citron",
     price: 21.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
