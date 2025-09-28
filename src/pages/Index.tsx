@@ -6,10 +6,10 @@ const Index = () => {
       {/* Le conteneur de contenu n'aura plus de fond pour laisser apparaître le carrousel en toute clarté */}
       <div className="relative z-10 w-full max-w-4xl p-4 rounded-lg container mx-auto py-8">
         <div className="text-center mb-8 mt-4">
-          <h1 className="text-4xl font-extrabold text-white mb-4 text-shadow-cannelé"> {/* Ajout de text-shadow-cannelé */}
+          <h1 className="text-4xl font-extrabold text-white mb-4"> {/* Suppression de text-shadow-cannelé */}
             Découvrez nos Cannelés Artisanaux
           </h1>
-          <p className="text-lg text-white text-shadow-cannelé"> {/* Ajout de text-shadow-cannelé */}
+          <p className="text-lg text-white"> {/* Suppression de text-shadow-cannelé */}
             Chaque bouchée, un voyage gustatif.
           </p>
         </div>
