@@ -52,25 +52,25 @@ const products: Product[] = [
   // Nouveaux produits classiques
   {
     id: "14",
-    name: "Cannelé Café",
-    description: "L'arôme riche du café pour un réveil gourmand.",
-    price: 2.90,
+    name: "Pudding de cannelé",
+    description: "Le petit",
+    price: 3.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
   {
     id: "15",
-    name: "Cannelé Pistache",
-    description: "La délicatesse de la pistache dans un cannelé.",
-    price: 3.10,
+     name: "Pâtisseries",
+    description: "1X Banofee ou Entre met chocolat ou Tarte mojito ou Tarte citron.",
+    price: 3.50,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
   {
     id: "16",
-    name: "Cannelé Citron",
-    description: "Une touche acidulée et rafraîchissante.",
-    price: 2.70,
+     name: "Pain d'épices",
+    description: "Savoureux.",
+    price: 8.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
