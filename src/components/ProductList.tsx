@@ -193,14 +193,14 @@ const products: Product[] = [
     id: "25",
     name: "Gros",
     description: "Deux boîtes de neuf.",
-    price: 2.90,
+    price: 22.00,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
   {
     id: "26",
-    name: "Cannelé Poire Chocolat",
-    description: "L'alliance parfaite de la poire fondante et du chocolat.",
+    name: "Mini",
+    description: "deux boîtes de.",
     price: 3.10,
     imageUrl: "/placeholder.svg",
     category: "sucre"
