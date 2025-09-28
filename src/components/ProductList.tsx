@@ -43,9 +43,9 @@ const products: Product[] = [
 
 const ProductList: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-6 md:gap-8 w-full max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-6 md:gap-8 w-full max-w-7xl mx-auto px-4">
       {products.map((product) => (
-        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full min-w-[280px] sm:min-w-[300px] md:min-w-[320px]">
+        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full w-full">
           <CardHeader className="p-4 md:p-6">
             <CardTitle className="text-xl md:text-2xl font-semibold">
               <span className="text-shadow-cannelé text-foreground">
