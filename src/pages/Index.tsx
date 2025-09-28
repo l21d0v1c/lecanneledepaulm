@@ -44,7 +44,7 @@ const Index = () => {
             )}
             {currentCategory === "sale" && "Dégustez chaque semaine trois parfums."}
             {currentCategory === "sucre" && "Nos Cannelés Sucrés"}
-            {currentCategory === "creation" && "Nos Créations Spéciales"}
+            {currentCategory === "creation" && "Je vous propose régulièrement des petites pâtisseries."}
           </h1>
           <p className="text-lg text-white">
             {currentCategory === "classique" && "Goût équilibré entre vanille et rhum ambré."}
