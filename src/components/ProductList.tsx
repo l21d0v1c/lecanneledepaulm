@@ -49,6 +49,95 @@ const products: Product[] = [
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
+  // Nouveaux produits classiques
+  {
+    id: "14",
+    name: "Cannelé Café",
+    description: "L'arôme riche du café pour un réveil gourmand.",
+    price: 2.90,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "15",
+    name: "Cannelé Pistache",
+    description: "La délicatesse de la pistache dans un cannelé.",
+    price: 3.10,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "16",
+    name: "Cannelé Citron",
+    description: "Une touche acidulée et rafraîchissante.",
+    price: 2.70,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "17",
+    name: "Cannelé Noisette",
+    description: "Le goût authentique de la noisette torréfiée.",
+    price: 2.90,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "18",
+    name: "Cannelé Fleur d'Oranger",
+    description: "Une saveur douce et parfumée de fleur d'oranger.",
+    price: 2.80,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "19",
+    name: "Cannelé Spéculoos",
+    description: "Les épices du spéculoos pour une saveur hivernale.",
+    price: 3.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "20",
+    name: "Cannelé Coco",
+    description: "L'exotisme de la noix de coco râpée.",
+    price: 2.90,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "21",
+    name: "Cannelé Miel & Amande",
+    description: "La douceur du miel et le croquant de l'amande.",
+    price: 3.10,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "22",
+    name: "Cannelé Lavande",
+    description: "Une note florale subtile et originale.",
+    price: 3.20,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "23",
+    name: "Cannelé Gingembre",
+    description: "Une saveur piquante et réconfortante.",
+    price: 3.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "24",
+    name: "Cannelé Praliné",
+    description: "Le goût intense et gourmand du praliné.",
+    price: 3.20,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
   // Produits salés
   {
     id: "5",
@@ -96,6 +185,23 @@ const products: Product[] = [
     name: "mini",
     description: "Une boîte de vingt-quatre.",
     price: 10.00,
+    imageUrl: "/placeholder.svg",
+    category: "sucre"
+  },
+  // Nouveaux produits sucrés
+  {
+    id: "25",
+    name: "Cannelé Pomme Cannelle",
+    description: "La douceur de la pomme et la chaleur de la cannelle.",
+    price: 2.90,
+    imageUrl: "/placeholder.svg",
+    category: "sucre"
+  },
+  {
+    id: "26",
+    name: "Cannelé Poire Chocolat",
+    description: "L'alliance parfaite de la poire fondante et du chocolat.",
+    price: 3.10,
     imageUrl: "/placeholder.svg",
     category: "sucre"
   },
