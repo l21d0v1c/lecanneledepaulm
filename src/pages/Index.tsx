@@ -50,7 +50,7 @@ const Index = () => {
             {currentCategory === "classique" && "Goût équilibré entre vanille et rhum ambré."}
             {currentCategory === "sale" && "Chèvre, miel, noix / Colin, citron, ciboulette / Chorizo, piment d'Espelette / Tomates confites, basilic / Saumon, citron, aneth / Chèvre, épinard / Poulet, estragon / Jambon, emmental / Carottes, cumin / ..."}
             {currentCategory === "sucre" && "La douceur à son paroxysme."}
-            {currentCategory === "creation" && "L'innovation au service du goût."}
+            {currentCategory === "creation" && ""}
           </p>
         </div>
         <ProductList category={currentCategory} />
