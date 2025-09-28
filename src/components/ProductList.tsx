@@ -208,9 +208,9 @@ const products: Product[] = [
   // Créations spéciales
   {
     id: "11",
-    name: "Cannelé Or & Safran",
-    description: "Une création luxueuse au safran et feuille d'or.",
-    price: 5.00,
+    name: "Pudding de cannelé",
+    description: "Le petit",
+    price: 3.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
   },
