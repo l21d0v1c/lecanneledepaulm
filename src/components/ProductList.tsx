@@ -28,8 +28,8 @@ const products: Product[] = [
   {
     id: "2",
     name: "Salés",
-    description: "Une touche de cacao pour les amateurs de chocolat.",
-    price: 2.80,
+    description: "Un sachet de dix.",
+    price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
