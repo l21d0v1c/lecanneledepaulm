@@ -86,7 +86,7 @@ const products: Product[] = [
   {
     id: "9",
     name: "Gros",
-    description: "une boite.",
+    description: "une boîte de neuf.",
     price: 3.40,
     imageUrl: "/placeholder.svg",
     category: "sucre"
