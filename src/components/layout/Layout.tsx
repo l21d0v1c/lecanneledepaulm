@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import SecondaryNavbar from "./SecondaryNavbar"; // Import the new SecondaryNavbar
+import SecondaryNavbar from "./SecondaryNavbar";
 import ImageCarousel from "@/components/ImageCarousel";
 
 interface LayoutProps {
@@ -22,8 +22,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="min-h-screen flex flex-col relative">
       <ImageCarousel images={carouselImages} />
       <Header />
-      <SecondaryNavbar /> {/* Placé ici, juste après le Header */}
-      <main className="flex-grow relative z-10">
+      <SecondaryNavbar />
+      <main className="flex-grow relative z-10 pt-[12rem] bg-white"> {/* Ajout de pt-[12rem] et bg-white */}
         {children}
       </main>
     </div>
