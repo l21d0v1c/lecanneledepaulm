@@ -116,25 +116,25 @@ const products: Product[] = [
   },
   {
     id: "22",
-    name: "Cannelé Lavande",
-    description: "Une note florale subtile et originale.",
-    price: 3.20,
+   name: "Salés",
+    description: "Deux boîte de vingt-quatre.",
+    price: 18.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
   {
     id: "23",
-    name: "Cannelé Gingembre",
-    description: "Une saveur piquante et réconfortante.",
-    price: 3.00,
+    name: "Pudding de cannelé",
+    description: "Le grand",
+    price: 8.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
   {
     id: "24",
-    name: "Cannelé Praliné",
-    description: "Le goût intense et gourmand du praliné.",
-    price: 3.20,
+     name: "Pâtisseries",
+    description: "8X Banofee ou Entre met chocolat ou Tarte mojito ou Tarte citron.",
+    price: 21.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
