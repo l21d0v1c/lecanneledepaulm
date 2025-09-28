@@ -4,7 +4,7 @@ const Index = () => {
   return (
     <div className="relative w-full flex flex-col items-center justify-center">
       {/* Section du titre et de la description - reste transparente sur le carrousel */}
-      <div className="relative z-10 w-full max-w-4xl p-4 container mx-auto pb-8"> {/* 'pt-8' a été retiré ici */}
+      <div className="relative z-10 w-full max-w-4xl container mx-auto"> {/* 'p-4' et 'pb-8' ont été retirés ici */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-extrabold text-white mb-4">
             Découvrez nos Cannelés Artisanaux
