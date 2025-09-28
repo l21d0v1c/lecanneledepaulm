@@ -18,8 +18,8 @@ const Header: React.FC = () => {
         <div className="absolute left-1/2 -translate-x-1/2 flex items-center space-x-4"> {/* Ajout de flex et space-x */}
           {/* Icône Instagram à gauche du bouton central */}
           <Link to="https://www.instagram.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
-            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
-              <Instagram className="h-16 w-16" /> {/* Taille augmentée ici */}
+            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center"> {/* Ajustement de la taille du bouton et suppression du padding par défaut */}
+              <Instagram className="h-16 w-16" /> {/* Taille de l'icône */}
             </Button>
           </Link>
 
@@ -35,8 +35,8 @@ const Header: React.FC = () => {
 
           {/* Icône Facebook à droite du bouton central */}
           <Link to="https://www.facebook.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
-            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
-              <Facebook className="h-16 w-16" /> {/* Taille augmentée ici */}
+            <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center"> {/* Ajustement de la taille du bouton et suppression du padding par défaut */}
+              <Facebook className="h-16 w-16" /> {/* Taille de l'icône */}
             </Button>
           </Link>
         </div>
