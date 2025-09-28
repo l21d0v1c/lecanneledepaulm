@@ -275,14 +275,14 @@ const ProductList: React.FC<ProductListProps> = ({ category }) => {
         {filteredProducts.map((product) => (
           <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full min-w-0">
             <CardHeader className="p-4 md:p-6 text-center">
-              <CardTitle className="text-3xl md:text-4xl font-semibold"> {/* Agrandissement de la police ici */}
+              <CardTitle className="text-3xl md:text-4xl font-semibold">
                 <span className="text-shadow-cannelé text-foreground">
                   {product.name}
                 </span>
               </CardTitle>
             </CardHeader>
             <CardContent className="flex-grow flex flex-col justify-between p-4 md:p-6 text-center">
-              <p className="mb-4 md:mb-6 text-base md:text-lg text-shadow-cannelé text-foreground break-words">
+              <p className="mb-4 md:mb-6 text-lg md:text-xl text-shadow-cannelé text-foreground break-words"> {/* Agrandissement de la police ici */}
                 {product.description}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 min-w-0">
