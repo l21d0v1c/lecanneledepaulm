@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <ImageCarousel images={carouselImages} /> {/* z-[-1] */}
       <Header /> {/* z-40 */}
       <SecondaryNavbar /> {/* z-30 */}
-      <main className="flex-grow relative z-10 pt-12"> {/* C'est bien pt-12 */}
+      <main className="flex-grow relative z-10 pt-48"> {/* Changé de pt-12 à pt-48 */}
         {children}
       </main>
     </div>
