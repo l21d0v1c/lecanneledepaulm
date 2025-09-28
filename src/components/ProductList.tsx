@@ -234,8 +234,8 @@ const products: Product[] = [
   {
     id: "27",
     name: "Pudding de cannelé",
-    description: "Le petit",
-    price: 3.00,
+    description: "Le moyen",
+    price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
   },
@@ -250,7 +250,7 @@ const products: Product[] = [
   {
     id: "29",
     name: "Pudding de cannelé",
-    description: "Le petit",
+    description: "Le grand",
     price: 3.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
