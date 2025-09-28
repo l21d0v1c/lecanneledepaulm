@@ -48,17 +48,17 @@ const ProductList: React.FC = () => {
         <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white">
           <CardHeader>
             <CardTitle className="text-xl font-semibold">
-              <span className="text-shadow-cannelé text-white"> {/* Changé de text-black à text-white */}
+              <span className="text-shadow-cannelé text-foreground"> {/* Changé de text-white à text-foreground */}
                 {product.name}
               </span>
             </CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col justify-between">
-            <p className="mb-4 text-shadow-cannelé text-white"> {/* Changé de text-black à text-white */}
+            <p className="mb-4 text-shadow-cannelé text-foreground"> {/* Changé de text-white à text-foreground */}
               {product.description}
             </p>
             <div className="flex items-center justify-between mt-auto">
-              <span className="text-2xl font-bold text-shadow-cannelé text-white"> {/* Changé de text-black à text-white */}
+              <span className="text-2xl font-bold text-shadow-cannelé text-foreground"> {/* Changé de text-white à text-foreground */}
                 {product.price.toFixed(2)}€
               </span>
               <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full">Ajouter au panier</Button>
