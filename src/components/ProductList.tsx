@@ -16,7 +16,7 @@ const products: Product[] = [
     name: "Cannelé Traditionnel",
     description: "Le classique, croustillant à l'extérieur, moelleux à l'intérieur.",
     price: 2.50,
-    imageUrl: "/placeholder.svg", // Using a placeholder for now
+    imageUrl: "/placeholder.svg",
   },
   {
     id: "2",
@@ -43,25 +43,27 @@ const products: Product[] = [
 
 const ProductList: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl">
       {products.map((product) => (
         <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white">
-          <CardHeader className="p-4"> {/* Réduction du padding */}
-            <CardTitle className="text-xl font-semibold">
+          <CardHeader className="p-3">
+            <CardTitle className="text-lg font-semibold">
               <span className="text-shadow-cannelé text-foreground">
                 {product.name}
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex-grow flex flex-col justify-between p-4"> {/* Réduction du padding */}
-            <p className="mb-4 text-shadow-cannelé text-foreground">
+          <CardContent className="flex-grow flex flex-col justify-between p-3">
+            <p className="mb-3 text-sm text-shadow-cannelé text-foreground">
               {product.description}
             </p>
-            <div className="flex items-center justify-between mt-auto">
-              <span className="text-2xl font-bold text-shadow-cannelé text-foreground">
+            <div className="flex items-center justify-between mt-2">
+              <span className="text-xl font-bold text-shadow-cannelé text-foreground">
                 {product.price.toFixed(2)}€
               </span>
-              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full">Ajouter au panier</Button>
+              <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-1 px-3">
+                Ajouter
+              </Button>
             </div>
           </CardContent>
         </Card>
