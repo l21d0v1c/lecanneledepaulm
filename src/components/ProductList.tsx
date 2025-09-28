@@ -224,7 +224,7 @@ const products: Product[] = [
   },
   {
     id: "13",
-    name: "Cannelé Truffe",
+    name: "Patisseries",
     description: "L'arôme rare et précieux de la truffe.",
     price: 6.00,
     imageUrl: "/placeholder.svg",
