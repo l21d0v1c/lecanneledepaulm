@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoader(false);
-    }, 3000); // Masquer le loader après 3 secondes
+    }, 10000); // Masquer le loader après 10 secondes
 
     return () => clearTimeout(timer);
   }, []);
