@@ -44,9 +44,9 @@ const products: Product[] = [
 const ProductList: React.FC = () => {
   return (
     <div className="w-full px-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-6 md:gap-8 w-full max-w-7xl mx-auto">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 md:gap-8 w-full max-w-7xl mx-auto">
         {products.map((product) => (
-          <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full w-full">
+          <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-white h-full min-w-0">
             <CardHeader className="p-4 md:p-6">
               <CardTitle className="text-xl md:text-2xl font-semibold">
                 <span className="text-shadow-cannelé text-foreground">
@@ -55,14 +55,14 @@ const ProductList: React.FC = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="flex-grow flex flex-col justify-between p-4 md:p-6">
-              <p className="mb-4 md:mb-6 text-base md:text-lg text-shadow-cannelé text-foreground">
+              <p className="mb-4 md:mb-6 text-base md:text-lg text-shadow-cannelé text-foreground break-words">
                 {product.description}
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-                <span className="text-2xl md:text-3xl font-bold text-shadow-cannelé text-foreground">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-3 min-w-0">
+                <span className="text-2xl md:text-3xl font-bold text-shadow-cannelé text-foreground flex-shrink-0">
                   {product.price.toFixed(2)}€
                 </span>
-                <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap min-w-[100px]">
+                <Button className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap flex-shrink-0">
                   Ajouter
                 </Button>
               </div>
