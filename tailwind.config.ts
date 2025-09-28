@@ -99,7 +99,7 @@ export default {
     plugin(function ({ addUtilities, theme }) {
       addUtilities({
         '.text-shadow-cannelé': {
-          textShadow: `1px 1px 2px ${theme('colors.cannelé-orange')}`, // Ombre de texte avec la couleur cannelé-orange
+          textShadow: `2px 2px 4px ${theme('colors.cannelé-orange')}`, // Ombre de texte plus prononcée
         },
       });
     }),
