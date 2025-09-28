@@ -8,8 +8,8 @@ import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 import LaMaisonPage from "./pages/LaMaisonPage";
 import NousContacterPage from "./pages/NousContacterPage";
-import Loader from "./components/Loader"; // Import du composant Loader
-import React, { useState, useEffect } from "react"; // Import de useState et useEffect
+import Loader from "./components/Loader";
+import React, { useState, useEffect } from "react";
 
 const queryClient = new QueryClient();
 
@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoader(false);
-    }, 4000); // Masquer le loader après 4 secondes
+    }, 3000); // Masquer le loader après 3 secondes
 
     return () => clearTimeout(timer);
   }, []);
@@ -30,7 +30,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          {showLoader && <Loader />} {/* Afficher le Loader de manière conditionnelle */}
+          {showLoader && <Loader />}
           <Layout>
             <Routes>
               <Route path="/" element={<Index />} />
