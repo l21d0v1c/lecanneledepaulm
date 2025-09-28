@@ -74,10 +74,10 @@ const products: Product[] = [
     category: "classique"
   },
   {
-    id: "cl8", // Nouvel ID pour le produit inséré
-    name: "Mini", // Copie du 4ème produit sucré
-    description: "Un sachet de 10.",
-    price: 5.00,
+    id: "cl8",
+    name: "Gros", // Nom mis à jour
+    description: "Deux boîtes de neuf.", // Description mise à jour
+    price: 22.00, // Prix mis à jour
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
