@@ -35,7 +35,7 @@ const products: Product[] = [
   },
   {
     id: "cl3",
-    name: "Salés", // Nom mis à jour ici
+    name: "Salés",
     description: "Un sachet de 10.", // Identique au premier produit salé
     price: 5.00,
     imageUrl: "/placeholder.svg",
@@ -75,8 +75,8 @@ const products: Product[] = [
   },
   {
     id: "cl8",
-    name: "Salés", // Nom mis à jour ici
-    description: "Une boîte de 24.", // Identique au 2ème produit salé
+    name: "Salés", // Identique au 2ème produit salé
+    description: "Une boîte de 24.",
     price: 10.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
@@ -86,6 +86,14 @@ const products: Product[] = [
     name: "Pudding de cannelés", // Identique au 2ème produit création
     description: "Moyen",
     price: 5.00,
+    imageUrl: "/placeholder.svg",
+    category: "classique"
+  },
+  {
+    id: "cl10",
+    name: "Pâtisseries", // Identique au 6ème produit création
+    description: "6x Banoffee ou Entremet chocolat ou Tarte Mojito ou Tarte Citron",
+    price: 16.00,
     imageUrl: "/placeholder.svg",
     category: "classique"
   },
