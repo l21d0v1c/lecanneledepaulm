@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-// import { ShoppingCart } from "lucide-react"; // Plus besoin de l'icône du panier
-// import { useCart } from "@/context/CartContext"; // Plus besoin du hook useCart
+import { Instagram, Facebook } from "lucide-react"; // Import des icônes
 
 const Header: React.FC = () => {
-  // const { itemCount } = useCart(); // Plus besoin du nombre d'articles dans le panier
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white bg-transparent">
       <div className="container flex h-32 items-center py-4 relative px-4">
@@ -17,8 +14,15 @@ const Header: React.FC = () => {
           </Button>
         </Link>
 
-        {/* Conteneur pour le bouton central "Le Cannelé de Paul M" */}
-        <div className="absolute left-1/2 -translate-x-1/2">
+        {/* Conteneur pour le bouton central "Le Cannelé de Paul M" et les icônes sociales */}
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center space-x-4"> {/* Ajout de flex et space-x */}
+          {/* Icône Instagram à gauche du bouton central */}
+          <Link to="https://www.instagram.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
+              <Instagram className="h-6 w-6" />
+            </Button>
+          </Link>
+
           <Link to="/">
             <Button
               variant="default"
@@ -26,6 +30,13 @@ const Header: React.FC = () => {
             >
               <span>Le Cannelé de</span>
               <span>Paul M</span>
+            </Button>
+          </Link>
+
+          {/* Icône Facebook à droite du bouton central */}
+          <Link to="https://www.facebook.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
+              <Facebook className="h-6 w-6" />
             </Button>
           </Link>
         </div>
