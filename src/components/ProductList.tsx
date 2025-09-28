@@ -118,7 +118,7 @@ const products: Product[] = [
   {
     id: "13",
     name: "Pâtisseries",
-    description: "1x Banoffee, Entre mes chocolats, Tarte Mojito, Tarte Citron",
+    description: "1x Banoffee ou Entre mes chocolats ou Tarte Mojito ou Tarte Citron",
     price: 3.50,
     imageUrl: "/placeholder.svg",
     category: "creation"
@@ -126,7 +126,7 @@ const products: Product[] = [
   {
     id: "14",
     name: "Pâtisseries",
-    description: "6x Banoffee, Entre mes chocolats, Tarte Mojito, Tarte Citron",
+    description: "6x Banoffee ou Entre mes chocolats ou Tarte Mojito ou Tarte Citron",
     price: 16.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
@@ -134,7 +134,7 @@ const products: Product[] = [
   {
     id: "15",
     name: "Pâtisseries",
-    description: "8x Banoffee, Entre mes chocolats, Tarte Mojito, Tarte Citron",
+    description: "8x Banoffee ou Entre mes chocolats ou Tarte Mojito ou Tarte Citron",
     price: 21.00,
     imageUrl: "/placeholder.svg",
     category: "creation"
