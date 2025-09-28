@@ -21,10 +21,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col relative">
       <ImageCarousel images={carouselImages} /> {/* z-[-1] */}
-      {/* La couche opaque fixe a été retirée */}
       <Header /> {/* z-40 */}
       <SecondaryNavbar /> {/* z-30 */}
-      <main className="flex-grow relative z-10 pt-48 bg-background"> {/* Ajout de pt-48 et bg-background */}
+      <main className="flex-grow relative z-10 pt-48"> {/* bg-background a été retiré pour rendre le contenu transparent */}
         {children}
       </main>
     </div>
