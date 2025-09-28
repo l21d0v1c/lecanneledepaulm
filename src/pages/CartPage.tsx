@@ -47,7 +47,7 @@ const CartPage: React.FC = () => {
                   type="number"
                   value={item.quantity}
                   onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
-                  className="w-16 text-center bg-transparent border-white text-black"
+                  className="w-16 text-center bg-transparent border-white text-black text-shadow-cannelé"
                   min="1"
                 />
                 <Button
