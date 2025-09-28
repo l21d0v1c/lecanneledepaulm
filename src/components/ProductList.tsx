@@ -19,24 +19,24 @@ const products: Product[] = [
   // Nouveaux produits salés (IDs 1, 2, 3)
   {
     id: "1",
-    name: "Cannelé Salé Mini (Sachet de 10)",
-    description: "Un sachet de 10 cannelés salés.",
+    name: "Mini",
+    description: "Un sachet de 10.",
     price: 5.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
   {
     id: "2",
-    name: "Cannelé Salé (Boîte de 24)",
-    description: "Une boîte de 24 cannelés salés.",
+    name: "Mini",
+    description: "Une boîte de 24.",
     price: 10.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
   },
   {
     id: "3",
-    name: "Cannelé Salé (Deux Boîtes de 24)",
-    description: "Deux boîtes de 24 cannelés salés.",
+    name: "Mini",
+    description: "Deux boîtes de 24.",
     price: 18.00,
     imageUrl: "/placeholder.svg",
     category: "sale"
