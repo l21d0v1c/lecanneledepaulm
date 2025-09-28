@@ -36,7 +36,7 @@ const products: Product[] = [
   {
     id: "3",
     name: "Pudding de cannelé",
-    description: "Une saveur intense de vanille et un soupçon de rhum.",
+    description: "Le petit",
     price: 2.70,
     imageUrl: "/placeholder.svg",
     category: "classique"
