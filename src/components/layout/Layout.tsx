@@ -17,25 +17,4 @@ const carouselImages = [
   "/canneles-7.jpg",
 ];
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return (
-    <div className="min-h-screen flex flex-col relative">
-      {/* Carousel en fond */}
-      <ImageCarousel images={carouselImages} />
-
-      {/* Navbar fixe transparente */}
-      <Header /> {/* z-40 */}
-      <SecondaryNavbar /> {/* z-30 */}
-
-      {/* Conteneur principal avec masquage du haut */}
-      <div className="relative flex-grow overflow-hidden z-10">
-        {/* Contenu décalé pour ne pas passer sous la navbar */}
-        <main className="pt-16 relative z-10">
-          {children}
-        </main>
-      </div>
-    </div>
-  );
-};
-
-export default Layout;
+const Layout: React.FC<LayoutProps> = ({ children }) => { return ( <div className="min-h-screen flex flex-col relative"> <ImageCarousel images={carouselImages} /> {/* z-[-1] */} <Header /> {/* z-40 */} <SecondaryNavbar /> {/* z-30 */} <main className="flex-grow relative z-10 pt-12"> {/* pt-12 */} {children} </main> </div> ); }; export default Layout;
