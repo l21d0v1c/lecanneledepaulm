@@ -230,6 +230,22 @@ const products: Product[] = [
     imageUrl: "/placeholder.svg",
     category: "creation"
   }
+  {
+    id: "27",
+    name: "Pudding de cannelé",
+    description: "Le petit",
+    price: 3.00,
+    imageUrl: "/placeholder.svg",
+    category: "creation"
+  },
+  {
+    id: "28",
+    name: "Pâtisseries",
+    description: "Banofee, Entre met chocolat, Tarte mojito, Tarte citron.",
+    price: 3.50,
+    imageUrl: "/placeholder.svg",
+    category: "creation"
+  }
 ];
 
 const ProductList: React.FC<ProductListProps> = ({ category }) => {
