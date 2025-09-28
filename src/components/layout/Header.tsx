@@ -17,7 +17,7 @@ const Header: React.FC = () => {
                 La Maison
               </Button>
             </Link>
-            <Link to="https://www.instagram.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.instagram.com/le_cannele_de_paul_m/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="text-white hover:bg-white/20 h-16 w-16 p-0 flex items-center justify-center">
                 <Instagram className="h-12 w-12" />
               </Button>
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
                 La Maison
               </Button>
             </Link>
-            <Link to="https://www.instagram.com/lecanneledepaulm/" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.instagram.com/le_cannele_de_paul_m/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="text-white hover:bg-white/20 h-20 w-20 p-0 flex items-center justify-center">
                 <Instagram className="h-16 w-16" />
               </Button>
