@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils"; // Import cn
 
 interface Product {
   id: string;
@@ -35,27 +34,20 @@ const products: Product[] = [
   },
 ];
 
-interface ProductListProps {
-  currentTextColor?: 'light' | 'dark';
-}
-
-const ProductList: React.FC<ProductListProps> = ({ currentTextColor }) => {
-  const textColorClass = currentTextColor === 'dark' ? 'text-black' : 'text-white';
-  const borderColorClass = currentTextColor === 'dark' ? 'border-gray-300' : 'border-black';
-
+const ProductList: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
       {products.map((product) => (
-        <Card key={product.id} className={cn("flex flex-col bg-transparent shadow-none border", borderColorClass)}>
+        <Card key={product.id} className="flex flex-col bg-transparent shadow-none border border-black">
           <CardHeader>
-            <CardTitle className={cn("text-xl font-semibold", textColorClass)}>
+            <CardTitle className="text-xl font-semibold text-white">
               {product.name}
             </CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col justify-between">
-            <p className={cn("mb-4", textColorClass)}>{product.description}</p>
+            <p className="text-white mb-4">{product.description}</p>
             <div className="flex items-center justify-between mt-auto">
-              <span className={cn("text-2xl font-bold", textColorClass)}>{product.price.toFixed(2)}€</span>
+              <span className="text-2xl font-bold text-white">{product.price.toFixed(2)}€</span>
               <Button>Ajouter au panier</Button>
             </div>
           </CardContent>
