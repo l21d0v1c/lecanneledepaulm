@@ -6,12 +6,12 @@ const LaMaisonPage: React.FC = () => {
     <div className="relative z-10 w-full max-w-4xl container mx-auto flex justify-center items-center py-12">
       <Card className="flex flex-col bg-transparent shadow-none border border-white h-full w-full max-w-2xl">
         <CardHeader className="p-6 text-center">
-          <CardTitle className="text-4xl md:text-5xl font-extrabold text-white mb-4 text-shadow-cannelé">
+          <CardTitle className="text-4xl md:text-5xl font-extrabold text-black mb-4 text-shadow-cannelé">
             La Maison
           </CardTitle>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col justify-center p-6 text-center">
-          <p className="mb-6 text-lg md:text-xl text-white text-shadow-cannelé leading-relaxed">
+          <p className="mb-6 text-lg md:text-xl text-black text-shadow-cannelé leading-relaxed">
             Bonjour ! Moi c’est Paul.
             Cuisinier pâtissier de formation, j'ai exercé depuis plus de 10 ans,
             en restaurants traditionnels, salon de thé, collectivités et traiteurs.
