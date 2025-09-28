@@ -12,10 +12,14 @@ const LaMaisonPage: React.FC = () => {
         </CardHeader>
         <CardContent className="flex-grow flex flex-col justify-center p-6 text-center">
           <p className="mb-6 text-lg md:text-xl text-white text-shadow-cannelé leading-relaxed">
-            Bienvenue chez Le Cannelé de Paul M, où la passion pour la pâtisserie rencontre la tradition bordelaise.
-            Nous nous engageons à vous offrir des cannelés artisanaux d'une qualité exceptionnelle, préparés avec les meilleurs ingrédients.
-            Chaque cannelé est une invitation à un voyage gustatif, un équilibre parfait entre un extérieur caramélisé et un intérieur moelleux et parfumé.
-            Découvrez notre savoir-faire et laissez-vous séduire par l'authenticité de nos créations.
+            Bonjour ! Moi c’est Paul.
+            Cuisinier pâtissier de formation, j'ai exercé depuis plus de 10 ans,
+            en restaurants traditionnels, salon de thé, collectivités et traiteurs.
+            J’ai quitté mon travail pour me lancer exclusivement dans cette nouvelle activité.
+            J’y retrouve ma passion pour la pâtisserie et avant tout ce produit traditionnel Bordelais.
+            Consommateur depuis mon enfance je souhaite faire partager le vrai goût du véritable Cannelé.
+            Je viens à votre rencontre toutes les semaines sur vos marchés, pour vous les faire découvrir.
+            Je peux également vous livrer, n'hésitez pas à me contacter!
           </p>
         </CardContent>
       </Card>
