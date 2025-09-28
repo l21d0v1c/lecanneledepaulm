@@ -19,6 +19,8 @@ const NousContacterPage: React.FC = () => {
             Indiquez nom, quantité et délai.
             <br />
             Commandes à retirer au Haillan et sur vos marchés.
+            <br /><br />
+            lecanneledepaul@hotmail.com
           </p>
         </CardContent>
       </Card>
