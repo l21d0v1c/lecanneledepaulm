@@ -282,7 +282,7 @@ const ProductList: React.FC<ProductListProps> = ({ category }) => {
               </CardTitle>
             </CardHeader>
             <CardContent className="flex-grow flex flex-col justify-between p-4 md:p-6 text-center">
-              <p className="mb-4 md:mb-6 text-lg md:text-xl text-shadow-cannelé text-foreground break-words"> {/* Agrandissement de la police ici */}
+              <p className="mb-4 md:mb-6 text-xl md:text-2xl text-shadow-cannelé text-foreground break-words"> {/* Agrandissement de la police ici */}
                 {product.description}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 min-w-0">
