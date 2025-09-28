@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart } from "lucide-react";
-import { useCart } from "@/context/CartContext"; // Import du hook useCart
+// import { ShoppingCart } from "lucide-react"; // Plus besoin de l'icône du panier
+// import { useCart } from "@/context/CartContext"; // Plus besoin du hook useCart
 
 const Header: React.FC = () => {
-  const { itemCount } = useCart(); // Récupération du nombre d'articles dans le panier
+  // const { itemCount } = useCart(); // Plus besoin du nombre d'articles dans le panier
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white bg-transparent">
@@ -28,17 +28,7 @@ const Header: React.FC = () => {
           </Link>
         </div>
 
-        {/* Bouton Caddie à droite */}
-        <Link to="/cart" className="absolute right-4"> {/* Lien vers la page du panier */}
-          <Button variant="ghost" size="icon" className="relative text-white hover:bg-white/20">
-            <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
-            {itemCount > 0 && ( // Affichage du compteur si des articles sont dans le panier
-              <span className="absolute -top-1 -right-1 bg-[#f8ac54] text-black rounded-full h-5 w-5 flex items-center justify-center text-xs font-bold">
-                {itemCount}
-              </span>
-            )}
-          </Button>
-        </Link>
+        {/* Le bouton Caddie est supprimé */}
       </div>
     </header>
   );

@@ -1,8 +1,18 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { useCart } from "@/context/CartContext"; // Import du hook useCart
-import { Product } from "@/types"; // Import du type Product
+// import { useCart } from "@/context/CartContext"; // Suppression de l'import du hook useCart
+// import { Product } from "@/types"; // Suppression de l'import du type Product
+
+// Définition locale de l'interface Product
+interface Product {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  category: "classique" | "sale" | "sucre" | "creation";
+}
 
 interface ProductListProps {
   category: "classique" | "sale" | "sucre" | "creation";
@@ -256,7 +266,7 @@ const products: Product[] = [
 ];
 
 const ProductList: React.FC<ProductListProps> = ({ category }) => {
-  const { addToCart } = useCart(); // Utilisation du hook useCart
+  // const { addToCart } = useCart(); // Suppression de l'utilisation du hook useCart
   const filteredProducts = products.filter(product => product.category === category);
 
   return (
@@ -279,12 +289,13 @@ const ProductList: React.FC<ProductListProps> = ({ category }) => {
                 <span className="text-2xl md:text-3xl font-bold text-shadow-cannelé text-foreground flex-shrink-0">
                   {product.price.toFixed(2)}€
                 </span>
-                <Button
-                  onClick={() => addToCart(product)} // Ajout du produit au panier
+                {/* Suppression du bouton "Ajouter au panier" */}
+                {/* <Button
+                  onClick={() => addToCart(product)}
                   className="bg-black text-white border-2 border-[#f8ac54] hover:bg-gray-800 rounded-full text-sm py-2 px-4 whitespace-nowrap flex-shrink-0"
                 >
                   Ajouter
-                </Button>
+                </Button> */}
               </div>
             </CardContent>
           </Card>
