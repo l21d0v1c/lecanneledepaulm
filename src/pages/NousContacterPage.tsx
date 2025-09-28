@@ -11,7 +11,7 @@ const NousContacterPage: React.FC = () => {
           </CardTitle>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col justify-center p-6 text-center">
-          <p className="mb-6 text-xl md:text-2xl text-black text-shadow-cannelé leading-relaxed">
+          <p className="mb-6 text-2xl md:text-3xl text-black text-shadow-cannelé leading-relaxed">
             Commandez par Téléphone / SMS / Mail
             <br />
             Du lundi au samedi de 10h à 18H

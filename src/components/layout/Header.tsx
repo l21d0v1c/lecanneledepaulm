@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           {/* Première div: La Maison + Instagram */}
           <div className="flex justify-center items-center space-x-4">
             <Link to="/la-maison">
-              <Button variant="ghost" className="text-base font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
+              <Button variant="ghost" className="text-lg font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
                 La Maison
               </Button>
             </Link>
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
               </Button>
             </Link>
             <Link to="/nous-contacter">
-              <Button variant="ghost" className="text-base font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
+              <Button variant="ghost" className="text-lg font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
                 Le contact
               </Button>
             </Link>
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
           {/* Première div pour grands écrans */}
           <div className="flex items-center space-x-4">
             <Link to="/la-maison" className="sm:w-auto">
-              <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
+              <Button variant="ghost" className="text-lg md:text-xl font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
                 La Maison
               </Button>
             </Link>
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
               </Button>
             </Link>
             <Link to="/nous-contacter" className="sm:w-auto">
-              <Button variant="ghost" className="text-base md:text-lg font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
+              <Button variant="ghost" className="text-lg md:text-xl font-semibold text-white hover:bg-white/20 border-2 border-white rounded-full px-6 py-3">
                 Le contact
               </Button>
             </Link>
